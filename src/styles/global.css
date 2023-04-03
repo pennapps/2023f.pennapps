@@ -1,0 +1,432 @@
+@tailwind base;
+@layer base {
+  @import url("https://p.typekit.net/p.css?s=1&k=tri7gwo&ht=tk&f=139.140.173.174.175.176.10881.10882.10884.10885&a=21288430&app=typekit&e=css");
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/144da4/00000000000000007735e619/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/144da4/00000000000000007735e619/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/144da4/00000000000000007735e619/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:600;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+      }
+
+  @font-face {
+      font-family:"proxima-nova";
+      src:url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"futura-pt";
+      src:url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"futura-pt";
+      src:url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/eb729a/000000000000000000010092/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"futura-pt";
+      src:url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+  }
+
+  @font-face {
+      font-family:"futura-pt";
+      src:url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+      font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+  }
+
+  .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
+  .tk-futura-pt { font-family: "futura-pt",sans-serif; }
+
+  h1 {
+    @apply font-bold text-3xl text-green mb-5;
+    font-family: futura-pt, sans-serif;
+  }
+
+
+  h2 {
+    @apply font-bold text-2xl text-green mb-1.5;
+    font-family: futura-pt, sans-serif;
+  }
+
+  h3 {
+    @apply font-normal text-xl text-green mb-1.5;
+    font-family: futura-pt, sans-serif;
+  }
+
+  h4 {
+    @apply font-normal text-green;
+    font-family: futura-pt, sans-serif;
+  }
+
+  p {
+    @apply font-normal text-green mb-2;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.0em;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: normal;
+  }
+
+  ul {
+    @apply font-normal text-green;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.3em;
+    list-style-type: circle; 
+    padding: 10px
+  }
+
+  ol {
+    @apply font-normal text-green;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.3em;
+    padding: 10px
+  }
+
+  main {
+    @apply bg-linen;
+  }
+}
+
+@tailwind components;
+@layer components {
+  .heading {
+    @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-4 pt-24;
+  }
+
+  .heading h1{
+    @apply text-green mb-8;
+  }
+
+  .heading button {
+    @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
+  }
+
+  .landing {
+    @apply h-screen flex flex-col justify-center items-center z-[1];
+  }
+
+  .landing-image {
+    @apply w-full sm:w-5/6 md:w-2/3 text-center z-0;
+  }
+
+  .landing-image h2 {
+    @apply md:hidden text-sm relative bottom-6 font-bold;
+  }
+
+  .landing-countdown {
+    @apply flex flex-row sm:space-x-3 space-x-2 z-[1];
+  }
+
+  .landing-countdown-square {
+    @apply w-[18.9vw] h-[18vw] sm:w-[14.7vw] sm:h-[14vw];
+    @apply md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
+    @apply lg:max-h-[8rem] lg:max-w-[8rem] lg:mb-28;
+    @apply bg-white flex flex-col items-center justify-center;
+  }
+
+  .landing-countdown-square h1 {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  .landing-countdown-square h4 {
+    @apply text-sm sm:text-base;
+  }
+
+  .landing-chevron {
+    @apply text-emerald w-[1.5rem] h-[1.5rem] mt-4 lg:-mt-[20rem] lg:mb-[20rem] z-10;
+    -webkit-animation : bounce 1.5s infinite;
+    -moz-animation    : bounce 1.5s infinite;
+    -o-animation      : bounce 1.5s infinite;
+    animation         : bounce 1.5s infinite;
+  }
+
+  .logistics-background {
+    @apply w-screen min-h-[50rem] object-cover;
+  }
+
+  .logistics-anchor {
+    @apply relative top-[-200px] invisible; 
+  }
+
+  .logistics-body {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+    @apply bg-linen rounded-lg w-[80%] md:w-[40rem] px-14 py-10;
+  }
+
+  .logistics-icons {
+    @apply flex flex-row space-x-4 pt-4;
+  }
+
+  .logistics-icon-square {
+    @apply flex flex-col items-center justify-center;
+    @apply bg-emerald bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-lg;
+    @apply font-semibold text-green tracking-wide;
+    font-family: proxima-nova, sans-serif;
+  }
+
+  .logistics-icon-square-container {
+    @apply h-[45%] flex items-center justify-center;
+  }
+
+  .schedule {
+    @apply absolute bg-linen w-full flex flex-col justify-center sm:mt-16 mt-20;
+    padding: 2%;
+  }
+
+  .about-row {
+    @apply flex flex-col sm:flex-row mb-4;
+  }
+
+  .about-row img {
+    @apply w-36 p-4 md:min-w-[12rem] md:max-h-[20rem] lg:max-w-xs lg:p-8 self-center md:mr-4;
+  }
+
+  .about-paragraph {
+    @apply flex flex-col lg:w-[75%] md:w-[60%];
+  }
+
+  nav {
+    @apply text-green bg-white px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
+    font-family: proxima-nova, sans-serif;
+  }
+  
+  nav a {
+    @apply no-underline hover:underline;
+  }
+  
+  .nav-pennapps {
+    @apply font-bold text-xl;
+    font-family: futura-pt, sans-serif;
+  }
+
+  .navlinks-banner {
+    @apply flex h-full flex-row items-center min-w-[50%] justify-end pl-0;
+  }
+
+  #mlh-trust-badge {
+    @apply md:px-[8%] lg:px-[4%] pt-20 shrink-0;
+  }
+
+  #mlh-trust-badge img {
+    @apply h-40 w-full;
+  }
+
+  .links {
+    @apply flex flex-row space-x-5 md:space-x-11;
+  }
+
+  .mobile-nav {
+    @apply sm:hidden absolute bg-white top-20 right-0 flex flex-col;
+    @apply overflow-hidden transition-all ease-in-out duration-500;
+  }
+
+  .mobile-nav a {
+    @apply py-4 px-16 border-b border-x border-gray-200 text-center;
+    @apply hover:bg-honeydew hover:no-underline;
+    @apply first:border-t;
+  }
+
+
+  .section {
+    @apply px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    margin-bottom: -0.5rem;
+  }
+
+  .anchor {
+    @apply relative top-[-100px] invisible;
+  }
+
+  .faq-collapsible {
+    @apply bg-sand py-1 px-3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.375em;
+    padding-bottom: 0;
+  }
+
+  .faq-question {
+    @apply bg-sand py-1 px-3;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1em;
+  }
+
+  .faq-answer {
+    @apply px-5 pb-0.5;
+  }
+
+  .sponsor-logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  #meta {
+    width: 30%
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 5%;
+  }
+
+  .footer-content {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    width: 90%;
+  }
+
+  .footer-content-layout {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .footer-content {
+      font-size: 0.75em;
+    }
+  }
+
+  .footer-img {
+    width: 100vw;
+  }
+
+  .footer-content a {
+    @apply text-sand;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-content p {
+    @apply text-sand;
+  }
+
+  .footer-content h1 {
+    @apply text-sand;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .footer-content h1 {
+      font-size: 35px;
+      line-height: 30px;
+    }
+  }
+
+  .footer-social-media {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-social-media-text {
+    margin-left: 10px;
+  }
+
+  .footer-penn-logo {
+    margin-left: -5px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .footer-penn-logo {
+      width: 175px;
+    }
+  }
+
+  @media screen and (max-width: 785px) {
+    .footer-mobile {
+      display: block;
+    }
+    .footer {
+      display: none;
+    }
+    .footer-content h1 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    .footer-content a {
+      font-weight: 400;
+    }
+    .footer-penn-logo {
+      width: 100px;
+    }
+  }
+
+  .footer-mobile {
+    position: relative;
+    margin-top: 5%;
+  }
+
+  .footer-social-media-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-img-mobile {
+    width: 100vw;
+    display: none;
+  }
+
+  @media screen and (max-width: 640px) {
+    .footer-img {
+      display: none;
+    }
+    .footer-img-mobile {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .footer-content {
+      bottom: 7%;
+    }
+    .footer-content h1 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 7px;
+    }
+    .footer-content {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@tailwind utilities;
