@@ -12,6 +12,9 @@ module.exports = {
         'green': "#1F4A38",
         'linen': "#FAF5E7",
         'sand': "#F5ECD6",
+        'neonpink' : "#FF34A0",
+        'lightblue' : "#D9F2F6",
+        'navy' : "#010029"
       }
     },
   },

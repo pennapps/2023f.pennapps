@@ -14,20 +14,20 @@ const FAQ = ({content}) => {
       if (tokens[i]) {
         answers.push(
           <div className="faq-answer" key={tokens[i]}>
-            <ReactMarkdown>{tokens[i]}</ReactMarkdown>
+            <ReactMarkdown style={{ color: "#FF34A0", "margin-bottom": "30px"}}>{tokens[i]}</ReactMarkdown>
           </div>
         );
       }
     }
     let trigger_closed = <div className="faq-collapsible">
       <h2 className="faq-question" key={question}>{`${question}`}</h2>
-      <VscTriangleDown style={{ color: "#40916C", minWidth: "16px" }} />
+      <VscTriangleDown style={{ color: "#5561D3", minWidth: "16px" }} />
 
     </div>
 
     let trigger_open = <div className="faq-collapsible">
       <h2 className="faq-question" key={question}>{`${question}`}</h2>
-      <VscTriangleUp style={{ color: "#40916C", minWidth: "16px" }} />
+      <VscTriangleUp style={{ color: "#5561D3", minWidth: "16px" }} />
 
     </div>
 
@@ -41,8 +41,8 @@ const FAQ = ({content}) => {
   return (
     <div key="faqs" className="section">
         <a className="anchor" id="faqs"/>
-        <h1>FAQs</h1>
-        <ReactMarkdown>We know you have a lot of questions, so check below for some of the most common answers. If you have other questions, drop us a line at [contact@pennapps.com](mailto:contact@pennapps.com).</ReactMarkdown>
+        <h1 className="faq-title">FAQs</h1>
+        <ReactMarkdown className="faq-subtitle">We know you have a lot of questions, so check below for some of the most common answers. If you have other questions, drop us a line at [contact@pennapps.com](mailto:contact@pennapps.com).</ReactMarkdown>
         {output}
     </div>
   )

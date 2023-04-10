@@ -195,10 +195,15 @@ ol {
     font-family: futura-pt;
     color: #06263d
 }
+
 h1 span {
     position:absolute; top: -76px;
 }
 
+.section h1 {
+    font-size: 50px;
+    color: #FFFFFF;
+}
 .carousel-item {
     color: #FFFFFF
 }
