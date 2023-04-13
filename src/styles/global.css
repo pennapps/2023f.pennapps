@@ -120,15 +120,38 @@
 @tailwind components;
 @layer components {
   .heading {
-    @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-4 pt-24;
+    @apply px-[15%] md:px-[20%] lg:px-[20%] text-center mb-4 pt-24;
   }
 
   .heading h1{
-    @apply text-green mb-8;
+    @apply px-[20%] text-black md:px-[20%] lg:px-[10%];
+    line-height: 50px;
+    font-size: 4em;
+    color: #FFEDC0;
   }
 
-  .heading button {
-    @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
+  .heading h2{
+    @apply px-[10%] text-black mt-20;
+    color: #FAE268;
+  }
+
+  #applyCoin{
+    @apply h-40;
+    min-width: 175px;
+  }
+
+  #applyButton1{
+    @apply h-40;
+    margin-left: 30%;
+  }
+  
+  #applyButton2{
+    @apply h-40;
+    margin-left: 10%;
+  }
+
+  .imageRow{
+    @apply flex mt-20 justify-center;
   }
 
   .landing {
@@ -262,6 +285,7 @@
     margin-bottom: -0.5rem;
   }
 
+
   .anchor {
     @apply relative top-[-100px] invisible;
   }
@@ -290,10 +314,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-  }
-
-  #meta {
-    width: 30%
   }
 
   .footer {
