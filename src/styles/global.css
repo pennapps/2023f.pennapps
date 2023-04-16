@@ -62,33 +62,40 @@
       font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
   }
 
+  @font-face {
+      font-family:"Terminal Grotesque Open";
+      src:url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.woff") format("woff"),url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.eot?#iefix") format("embedded-opentype");
+      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+  }
+
   .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
   .tk-futura-pt { font-family: "futura-pt",sans-serif; }
+  .tk-terminal-groteque { font-family: "Terminal Grotesque Open", sans-serif; }
 
   h1 {
     @apply font-bold text-3xl text-green mb-5;
-    font-family: futura-pt, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
 
   h2 {
     @apply font-bold text-2xl text-green mb-1.5;
-    font-family: futura-pt, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
   h3 {
     @apply font-normal text-xl text-green mb-1.5;
-    font-family: futura-pt, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
   h4 {
     @apply font-normal text-green;
-    font-family: futura-pt, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
   p {
     @apply font-normal text-green mb-2;
-    font-family: proxima-nova, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
     font-size: 1.0em;
   }
 
@@ -99,7 +106,7 @@
 
   ul {
     @apply font-normal text-green;
-    font-family: proxima-nova, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
     font-size: 1.3em;
     list-style-type: circle; 
     padding: 10px
@@ -107,7 +114,7 @@
 
   ol {
     @apply font-normal text-green;
-    font-family: proxima-nova, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
     font-size: 1.3em;
     padding: 10px
   }
@@ -123,16 +130,16 @@
     @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-4 pt-24;
   }
 
-  .heading h1{
-    @apply text-green mb-8;
-  }
-
   .heading button {
     @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
   }
 
   .landing {
-    @apply h-screen flex flex-col justify-center items-center z-[1];
+    @apply flex flex-col justify-center items-center z-[1];
+  }
+
+  .landing-background {
+    @apply w-screen min-h-[50rem];
   }
 
   .landing-image {
@@ -145,21 +152,17 @@
 
   .landing-countdown {
     @apply flex flex-row sm:space-x-3 space-x-2 z-[1];
+    margin-top: -27%;
+    margin-bottom: 10%;
+    width: 45%;
+    justify-content: space-between;
   }
 
   .landing-countdown-square {
-    @apply w-[18.9vw] h-[18vw] sm:w-[14.7vw] sm:h-[14vw];
+    @apply w-[25vw] h-[22vw] sm:w-[14.7vw] sm:h-[14vw];
     @apply md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
     @apply lg:max-h-[8rem] lg:max-w-[8rem] lg:mb-28;
-    @apply bg-white flex flex-col items-center justify-center;
-  }
-
-  .landing-countdown-square h1 {
-    @apply text-2xl sm:text-3xl;
-  }
-
-  .landing-countdown-square h4 {
-    @apply text-sm sm:text-base;
+    @apply flex flex-col items-center justify-center;
   }
 
   .landing-chevron {
@@ -170,8 +173,20 @@
     animation         : bounce 1.5s infinite;
   }
 
-  .logistics-background {
-    @apply w-screen min-h-[50rem] object-cover;
+  .landing-ctdn-amt {
+    @apply font-bold text-9xl text-brightyellow mb-5;
+    font-family: Terminal Grotesque Open, sans-serif;
+  }
+
+  .landing-ctdn-unit {
+    @apply text-3xl text-peach mb-5;
+    font-family: Terminal Grotesque Open, sans-serif;
+    margin-top: -27%;
+  }
+
+  .logistics-content {
+    @apply relative text-navy px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    margin-bottom: -0.5rem;
   }
 
   .logistics-anchor {
@@ -179,8 +194,8 @@
   }
 
   .logistics-body {
-    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
-    @apply bg-linen rounded-lg w-[80%] md:w-[40rem] px-14 py-10;
+    @apply relative;
+    @apply bg-brightblue rounded-lg w-[80%] md:w-[40rem] px-14 py-10; 
   }
 
   .logistics-icons {
@@ -189,8 +204,8 @@
 
   .logistics-icon-square {
     @apply flex flex-col items-center justify-center;
-    @apply bg-emerald bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-lg;
-    @apply font-semibold text-green tracking-wide;
+    @apply bg-brightblue bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-lg;
+    @apply font-semibold text-navy tracking-wide;
     font-family: proxima-nova, sans-serif;
   }
 
