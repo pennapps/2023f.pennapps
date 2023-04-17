@@ -120,38 +120,47 @@
 @tailwind components;
 @layer components {
   .heading {
-    @apply px-[15%] md:px-[20%] lg:px-[20%] text-center mb-4 pt-24;
+    @apply flex flex-col text-center px-[15%] md:px-[20%] lg:px-[20%] mb-4 pt-24;
   }
 
   .heading h1{
     @apply px-[20%] text-black md:px-[20%] lg:px-[10%];
-    line-height: 50px;
-    font-size: 4em;
-    color: #FFEDC0;
+    font-size: 3em;
   }
 
   .heading h2{
-    @apply px-[10%] text-black mt-20;
-    color: #FAE268;
-  }
-
-  #applyCoin{
-    @apply h-40;
-    min-width: 175px;
-  }
-
-  #applyButton1{
-    @apply h-40;
-    margin-left: 30%;
-  }
-  
-  #applyButton2{
-    @apply h-40;
-    margin-left: 10%;
+    @apply px-[10%] text-black;
   }
 
   .imageRow{
-    @apply flex mt-20 justify-center;
+    @apply flex flex-col items-center mb-20 mt-20;
+  }
+  
+  .imageRow img{
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gamebox{
+    border-width: 15px;
+    background-color: #BEA8FF;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    border-color: #9773FF;
+  }
+  
+  .desbox{
+    border-width: 15px;
+    background-color: #C1ECFF;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    border-color: #00B7FF;
   }
 
   .landing {

@@ -1,19 +1,21 @@
 import React from 'react'
-import Header from '../../content/heading.mdx'
-import coin from '../images/apply_coin.png'
-import slot from '../images/coin_slot.png'
+import stateOne from '../images/ApplyStateOne.png'
+import stateTwo from '../images/ApplyStateTwo.png'
 
 function Heading() {
   return (
     <div className="heading">
         <div>
-          <Header/>
+          <div className="gamebox">
+            <h1>Game On! Applications are now open.</h1>
+          </div>
+          <div className="desbox">
+            <h2>Hosted at the nation's first university, PennApps is the original college hackathon. Come join us to learn something new, build an app, or start a company. Let’s continue to make history together.</h2>
+          </div>
           <div className="imageRow">
             <a href="#apply">
-              <img src={coin} id="applyCoin" href="#apply"></img>
+              <img src={stateOne} href="#apply"></img>
             </a>
-            <img src={slot} id="applyButton1"></img>
-            <img src={slot} id="applyButton1"></img>
           </div>
         </div>
     </div>
