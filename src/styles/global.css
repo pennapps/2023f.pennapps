@@ -152,16 +152,16 @@
 
   .landing-countdown {
     @apply flex flex-row sm:space-x-3 space-x-2 z-[1];
-    margin-top: -27%;
-    margin-bottom: 10%;
-    width: 45%;
+    margin-top: -27vw;
+    margin-bottom: 10vw;
+    width: 48%;
     justify-content: space-between;
   }
 
   .landing-countdown-square {
     @apply w-[25vw] h-[22vw] sm:w-[14.7vw] sm:h-[14vw];
     @apply md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
-    @apply lg:max-h-[8rem] lg:max-w-[8rem] lg:mb-28;
+    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[28vw];
     @apply flex flex-col items-center justify-center;
   }
 
@@ -174,14 +174,14 @@
   }
 
   .landing-ctdn-amt {
-    @apply font-bold text-9xl text-brightyellow mb-5;
+    @apply font-bold text-[10vw] text-brightyellow mb-5;
     font-family: Terminal Grotesque Open, sans-serif;
   }
 
   .landing-ctdn-unit {
-    @apply text-3xl text-peach mb-5;
+    @apply text-[2.5vw] text-peach mb-5;
     font-family: Terminal Grotesque Open, sans-serif;
-    margin-top: -27%;
+    margin-top: -50%;
   }
 
   .logistics-content {
