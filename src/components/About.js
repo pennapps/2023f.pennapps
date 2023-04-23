@@ -20,7 +20,7 @@ const About = ({content}) => {
 
   return (
     <div>
-        <a className="anchor" id="about"/>
+        <a className="anchor" id="About"/>
         <div className="section" key="about" id="about">
             <ReactMarkdown>{lines[0]}</ReactMarkdown>
             {paragraphs}

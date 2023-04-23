@@ -27,7 +27,7 @@ const IndexPage = ({data}) => {
       <Navbar/>
       <Heading/>
       <About content={aboutContent.rawBody} />
-      <Section content={applyContent.body} id="apply" />
+      <Section content={applyContent.body} id="Apply" />
       <Logistics content={logisticsContent.body}/>
       <FAQ content={faqContent.rawBody} />
       <Sponsors/>
