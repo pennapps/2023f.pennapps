@@ -68,9 +68,15 @@
       font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   }
 
+  @font-face {font-family: "Karmatic Arcade"; 
+      src:url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.woff") format("woff"), url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.eot?#iefix") format("embedded-opentype");
+      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+  }
+
   .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
   .tk-futura-pt { font-family: "futura-pt",sans-serif; }
   .tk-terminal-groteque { font-family: "Terminal Grotesque Open", sans-serif; }
+  .tk-karmatic-arcade { font-family: "Karmatic Arcade", sans-serif; }
 
   h1 {
     @apply font-bold text-3xl text-green mb-5;
@@ -139,7 +145,7 @@
   }
 
   .landing-background {
-    @apply w-screen min-h-[50rem];
+    @apply w-screen min-h-[100vh];
   }
 
   .landing-image {
@@ -260,7 +266,7 @@
   }
 
   .links button {
-    @apply mt-1 bg-brightyellow text-xl text-periwinkle px-6 py-3 rounded-full hover:bg-brightblue font-bold;
+    @apply mt-1 bg-brightyellow text-xl text-periwinkle px-6 py-3 rounded-full hover:bg-yellow font-bold;
   }
 
   .mobile-nav {
