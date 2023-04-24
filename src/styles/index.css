@@ -524,7 +524,7 @@ h1 span {
 }
 
 .background {
-    background-color: #050857;
+    background-color: #06263D;
 }
 
 .button {
@@ -563,7 +563,7 @@ h1 span {
 #logistics_content {
     padding-top: 100px;
     padding-bottom: 250px;
-    navbackground-image: url('/img/logistics_notext.png');
+    background-image: url('/img/logistics_notext.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

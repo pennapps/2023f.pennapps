@@ -62,8 +62,16 @@
       font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
   }
 
+  @font-face {
+    font-family:"Terminal Grotesque Open";
+    src:url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.woff") format("woff"),url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.eot?#iefix") format("embedded-opentype");
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+  }
+
+
   .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
   .tk-futura-pt { font-family: "futura-pt",sans-serif; }
+  .tk-terminal-groteque { font-family: "Terminal Grotesque Open", sans-serif; }
 
   h1 {
     @apply font-bold text-3xl text-green mb-5;
@@ -73,22 +81,22 @@
 
   h2 {
     @apply font-bold text-2xl text-green mb-1.5;
-    font-family: futura-pt, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
   h3 {
     @apply font-normal text-xl text-green mb-1.5;
-    font-family: futura-pt, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
   h4 {
     @apply font-normal text-green;
-    font-family: futura-pt, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
   p {
     @apply font-normal text-green mb-2;
-    font-family: proxima-nova, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
     font-size: 1.0em;
   }
 
@@ -99,7 +107,7 @@
 
   ul {
     @apply font-normal text-green;
-    font-family: proxima-nova, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
     font-size: 1.3em;
     list-style-type: circle;
     padding: 10px
@@ -107,31 +115,174 @@
 
   ol {
     @apply font-normal text-green;
-    font-family: proxima-nova, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
     font-size: 1.3em;
     padding: 10px
   }
 
   main {
-    @apply bg-linen;
+    @apply bg-black;
   }
 }
 
 @tailwind components;
 @layer components {
-  .heading {
+  .heading {@apply text-center;
+  }
+
+  .image-row{
+    @apply mb-20 mt-20;
+    position: relative;
     @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-4 pt-24;
   }
 
+  .apply-content{
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+    width: 15%;
+  }
+
+  #apply-bg{
+    position: relative;
+    width: 100%;
+  }   
+
   .heading h1{
+    @apply px-[20%] text-black md:px-[20%] lg:px-[10%];
+    color: #451DB9;
+    font-size: 350%;
+    line-height: 80%;
+    margin-top: 2%;
+  }
+
+  .heading h2{
+    @apply px-[5%] ;
+    color: #00639A;
+    font-size: 200%;
+    line-height: 160%;
+  }
+
+  .header-box {
+    border-width: 15px;
+    background-color: #BEA8FF;
+    border-color: #9773FF;
+    width: 100%;
+  }
+
+  .desc-box{
+    position: relative;
+    border-width: 15px;
+    background-color: #C1ECFF;
+    height: auto;
+    width: 100%;
+    border-color: #00B7FF;
+  }
+
+  .dots{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+  }
+
+  .box{
+    width: calc((100% - 300px) / 2);
+    border-width: 15px;
+    background-color: #5562E9;
+    border-color: #6D79FF;
+  }
+
+  .blue-top-left{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    left: 10px;
+    top: 10px;
+    background-color: #00B7FF;
+    border-radius: 50%;
+  }
+  .blue-top-right{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    right: 10px;
+    top: 10px;
+    background-color: #00B7FF;
+    border-radius: 50%;
+  }
+
+  .blue-bottom-left{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    left: 10px;
+    bottom: 10px;
+    background-color: #00B7FF;
+    border-radius: 50%;
+  }
+  .blue-bottom-right{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #00B7FF;
+    border-radius: 50%;
     @apply text-green mb-8;
   }
+  
+  .purple-top-left{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    left: 10px;
+    top: 10px;
+    background-color: #9773FF;
+    border-radius: 50%;
+  }
+  .purple-top-right{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    right: 10px;
+    top: 10px;
+    background-color: #9773FF;
+    border-radius: 50%;
+  }
+  .purple-bottom-left{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    left: 10px;
+    bottom: 10px;
+    background-color: #9773FF;
+    border-radius: 50%;
+  }
+  .purple-bottom-right{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #9773FF;
+    border-radius: 50%;
+  }
+
 
   .heading button {
     @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
   }
 
-  .landing {
+  .landing {@apply flex flex-col justify-center items-center z-[1];
+  }
+
+  .landing-background {
+    @apply w-screen min-h-[50rem];
     @apply h-screen flex flex-col justify-center items-center z-[1];
   }
 
@@ -145,21 +296,17 @@
 
   .landing-countdown {
     @apply flex flex-row sm:space-x-3 space-x-2 z-[1];
+    margin-top: -27vw;
+    margin-bottom: 10vw;
+    width: 48%;
+    justify-content: space-between;
   }
 
   .landing-countdown-square {
-    @apply w-[18.9vw] h-[18vw] sm:w-[14.7vw] sm:h-[14vw];
+    @apply w-[25vw] h-[22vw] sm:w-[14.7vw] sm:h-[14vw];
     @apply md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
-    @apply lg:max-h-[8rem] lg:max-w-[8rem] lg:mb-28;
-    @apply bg-white flex flex-col items-center justify-center;
-  }
-
-  .landing-countdown-square h1 {
-    @apply text-2xl sm:text-3xl;
-  }
-
-  .landing-countdown-square h4 {
-    @apply text-sm sm:text-base;
+    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[28vw];
+    @apply flex flex-col items-center justify-center;
   }
 
   .landing-chevron {
@@ -168,6 +315,22 @@
     -moz-animation    : bounce 1.5s infinite;
     -o-animation      : bounce 1.5s infinite;
     animation         : bounce 1.5s infinite;
+  }
+
+  .landing-ctdn-amt {
+    @apply font-bold text-[10vw] text-brightyellow mb-5;
+    font-family: Terminal Grotesque Open, sans-serif;
+  }
+
+  .landing-ctdn-unit {
+    @apply text-[2.5vw] text-peach mb-5;
+    font-family: Terminal Grotesque Open, sans-serif;
+    margin-top: -50%;
+  }
+
+  .logistics-content {
+    @apply relative text-navy px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    margin-bottom: -0.5rem;
   }
 
   .logistics-background {
@@ -179,8 +342,8 @@
   }
 
   .logistics-body {
-    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
-    @apply bg-linen rounded-lg w-[80%] md:w-[40rem] px-14 py-10;
+    @apply relative;
+    @apply bg-brightblue rounded-lg w-[80%] md:w-[40rem] px-14 py-10; 
   }
 
   .logistics-icons {
@@ -189,8 +352,8 @@
 
   .logistics-icon-square {
     @apply flex flex-col items-center justify-center;
-    @apply bg-emerald bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-lg;
-    @apply font-semibold text-green tracking-wide;
+    @apply bg-brightblue bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-lg;
+    @apply font-semibold text-navy tracking-wide;
     font-family: proxima-nova, sans-serif;
   }
 
@@ -203,16 +366,42 @@
     padding: 2%;
   }
 
-  .about-row {
-    @apply flex flex-col sm:flex-row mb-4;
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center
   }
 
-  .about-row img {
-    @apply w-36 p-4 md:min-w-[12rem] md:max-h-[20rem] lg:max-w-xs lg:p-8 self-center md:mr-4;
+  .about-paragraph h2{
+    font-size: 50px;
+    line-height: 80px;
+    color: #FFD3C9;
   }
 
-  .about-paragraph {
-    @apply flex flex-col lg:w-[75%] md:w-[60%];
+  .about-paragraph p{
+    font-size: 120%;
+    line-height: 40px;
+    @apply text-justify;
+    color: #FFD3C9;
+  }
+
+  .about-paragraph{
+    @apply text-justify mt-10 mb-10;
+    background-color: #31398C;
+    padding: 30px;
+    border-radius: 40px;
+
+    height: auto;
+    width: 55%;
+  }
+  .about-header{
+    @apply text-center;
+    background-color: #5562E9;
+    border-radius: 20px;
+    color: #FFD3C9;
+    width: 100%;
+    left: 25%;
+    margin-bottom: 10px;
   }
 
   nav {
