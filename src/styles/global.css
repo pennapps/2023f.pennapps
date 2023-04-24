@@ -66,7 +66,7 @@
   .tk-futura-pt { font-family: "futura-pt",sans-serif; }
 
   h1 {
-    @apply font-bold text-3xl text-green mb-5;
+    @apply font-bold text-3xl mb-5;
     font-family: futura-pt, sans-serif;
   }
 
@@ -267,30 +267,28 @@
   }
 
   .faq-collapsible {
-    @apply bg-sand py-1 px-3;
+    @apply bg-darkpurple py-1 px-3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.750em;
     padding-bottom: 0;
-    background-color: #D9F2F6;
     border-radius: 5px;
   }
 
   .faq-question {
-    @apply bg-lightblue py-1 px-3;
+    @apply bg-darkpurple text-pastelpurple py-1 px-3;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
-    color: #5561D3;
-    background-color: #D9F2F6;
   }
 
   .faq-answer {
     @apply px-5 pb-0.5;
-    @apply [&>p]:text-neonpink;
+    @apply [&>p]:text-pastelpurple;
   }
 
   .faq-title {
+    @apply text-pinkpurple;
     text-align: center;
     margin-bottom: 50px;
   }
