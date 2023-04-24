@@ -66,8 +66,8 @@
   .tk-futura-pt { font-family: "futura-pt",sans-serif; }
 
   h1 {
-    @apply font-bold text-3xl mb-5;
-    font-family: futura-pt, sans-serif;
+    @apply font-bold text-3xl text-green mb-5;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
 
@@ -101,7 +101,7 @@
     @apply font-normal text-green;
     font-family: proxima-nova, sans-serif;
     font-size: 1.3em;
-    list-style-type: circle; 
+    list-style-type: circle;
     padding: 10px
   }
 
@@ -175,7 +175,7 @@
   }
 
   .logistics-anchor {
-    @apply relative top-[-200px] invisible; 
+    @apply relative top-[-200px] invisible;
   }
 
   .logistics-body {
@@ -219,11 +219,11 @@
     @apply text-green bg-white px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
     font-family: proxima-nova, sans-serif;
   }
-  
+
   nav a {
     @apply no-underline hover:underline;
   }
-  
+
   .nav-pennapps {
     @apply font-bold text-xl;
     font-family: futura-pt, sans-serif;
@@ -267,34 +267,22 @@
   }
 
   .faq-collapsible {
-    @apply bg-darkpurple py-1 px-3;
+    @apply bg-sand py-1 px-3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.750em;
+    margin-bottom: 0.375em;
     padding-bottom: 0;
-    border-radius: 5px;
   }
 
   .faq-question {
-    @apply bg-darkpurple text-pastelpurple py-1 px-3;
+    @apply bg-sand py-1 px-3;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
   }
 
   .faq-answer {
     @apply px-5 pb-0.5;
-    @apply [&>p]:text-pastelpurple;
-  }
-
-  .faq-title {
-    @apply text-pinkpurple;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .faq-subtitle {
-    @apply [&>p]:text-lightblue;
   }
 
   .sponsor-logo-container {

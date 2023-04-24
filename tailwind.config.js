@@ -31,6 +31,11 @@ module.exports = {
         'pastelcoral' : "#FFD3C9",
         'coral' : "#F9A084",
         'orange' : "#F6795D",
+
+        'brightblue': "#D9F2F7",
+        'navy': "#293280",
+        'brightyellow': "#fff2ab",
+        'peach': "#f6795d",
       }
     },
   },
