@@ -21,13 +21,13 @@ const FAQ = ({content}) => {
     }
     let trigger_closed = <div className="faq-collapsible">
       <h2 className="faq-question" key={question}>{`${question}`}</h2>
-      <VscTriangleDown style={{ color: "#FFFFFF", minWidth: "16px" }} />
+      <VscTriangleDown style={{ color: "#40916C", minWidth: "16px" }} />
 
     </div>
 
     let trigger_open = <div className="faq-collapsible">
       <h2 className="faq-question" key={question}>{`${question}`}</h2>
-      <VscTriangleUp style={{ color: "#FFFFFF", minWidth: "16px" }} />
+      <VscTriangleUp style={{ color: "#40916C", minWidth: "16px" }} />
 
     </div>
 
@@ -40,7 +40,7 @@ const FAQ = ({content}) => {
 
   return (
     <div key="faqs" className="section">
-        <a className="anchor" id="faqs"/>
+        <a className="anchor" id="FAQs"/>
         <h1 className="faq-title">FAQs</h1>
         {output}
     </div>
