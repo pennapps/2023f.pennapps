@@ -4,7 +4,7 @@ import aboutImg from '../images/ABOUT.png';
 const About = ({content}) => {
   return (
     <div className="about-section">
-      <a className="anchor" id="about"/>
+      <a className="anchor" id="About"/>
       <img src={aboutImg}></img>
 
       <div className="about-paragraph">
