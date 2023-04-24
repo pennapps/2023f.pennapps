@@ -17,6 +17,8 @@ module.exports = {
         'navy': "#293280",
         'brightyellow': "#fff2ab",
         'peach': "#f6795d",
+        'periwinkle':"#31398c",
+        'yellow':"#FAE268"
       }
     },
   },

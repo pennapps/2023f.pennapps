@@ -40,7 +40,7 @@ const FAQ = ({content}) => {
 
   return (
     <div key="faqs" className="section">
-        <a className="anchor" id="faqs"/>
+        <a className="anchor" id="FAQs"/>
         <h1>FAQs</h1>
         <ReactMarkdown>We know you have a lot of questions, so check below for some of the most common answers. If you have other questions, drop us a line at [contact@pennapps.com](mailto:contact@pennapps.com).</ReactMarkdown>
         {output}
