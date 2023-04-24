@@ -63,12 +63,12 @@
   }
 
   @font-face {
-      font-family:"Terminal Grotesque Open";
-      src:url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.woff") format("woff"),url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.eot?#iefix") format("embedded-opentype");
-      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+    font-family:"Terminal Grotesque Open";
+    src:url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.woff") format("woff"),url("//db.onlinewebfonts.com/t/4f391cff783d1bed452c22caaa21a73b.eot?#iefix") format("embedded-opentype");
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   }
 
-  @font-face {font-family: "Karmatic Arcade"; 
+  @font-face {font-family: "Karmatic Arcade";
       src:url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.woff") format("woff"), url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.eot?#iefix") format("embedded-opentype");
       font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   }
@@ -114,7 +114,7 @@
     @apply font-normal text-green;
     font-family: Terminal Grotesque Open, sans-serif;
     font-size: 1.3em;
-    list-style-type: circle; 
+    list-style-type: circle;
     padding: 10px
   }
 
@@ -132,8 +132,7 @@
 
 @tailwind components;
 @layer components {
-  .heading {
-    @apply text-center;
+  .heading {@apply text-center;
   }
 
   .image-row{
@@ -152,8 +151,7 @@
   #apply-bg{
     position: relative;
     width: 100%;
-  }   
-
+  }
 
   .heading h1{
     @apply px-[20%] text-black md:px-[20%] lg:px-[10%];
@@ -276,13 +274,12 @@
     background-color: #9773FF;
     border-radius: 50%;
   }
-  
+
   .heading button {
     @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
   }
 
-  .landing {
-    @apply flex flex-col justify-center items-center z-[1];
+  .landing {@apply flex flex-col justify-center items-center z-[1];
   }
 
   .landing-background {
@@ -336,12 +333,12 @@
   }
 
   .logistics-anchor {
-    @apply relative top-[-200px] invisible; 
+    @apply relative top-[-200px] invisible;
   }
 
   .logistics-body {
     @apply relative;
-    @apply bg-brightblue rounded-lg w-[80%] md:w-[40rem] px-14 py-10; 
+    @apply bg-brightblue rounded-lg w-[80%] md:w-[40rem] px-14 py-10;
   }
 
   .logistics-icons {
@@ -375,6 +372,7 @@
     line-height: 80px;
     color: #FFD3C9;
   }
+
   .about-paragraph p{
     font-size: 120%;
     line-height: 40px;
@@ -406,11 +404,11 @@
     @apply text-green bg-periwinkle px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
     font-family: Terminal Grotesque Open, sans-serif;
   }
-  
+
   nav a {
     @apply no-underline hover:underline;
   }
-  
+
   .nav-pennapps {
     @apply font-bold text-xl;
     font-family: futura-pt, sans-serif;
@@ -458,22 +456,29 @@
   }
 
   .faq-collapsible {
-    @apply bg-sand py-1 px-3;
+    @apply bg-darkpurple py-1 px-3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.375em;
     padding-bottom: 0;
+    border-radius: 7px;
   }
 
   .faq-question {
-    @apply bg-sand py-1 px-3;
+    @apply text-pastelpurple bg-darkpurple py-1 px-3;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
   }
 
   .faq-answer {
     @apply px-5 pb-0.5;
+    @apply [&>p]:text-pastelpurple;
+  }
+
+  .faq-title {
+    @apply text-pinkpurple;
+    text-align: center;
   }
 
   .sponsor-logo-container {
