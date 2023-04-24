@@ -453,7 +453,7 @@
 
   .anchor {
     @apply relative top-[-100px] invisible;
-  }
+  } 
 
   .faq-collapsible {
     @apply bg-darkpurple py-1 px-3;
@@ -462,6 +462,7 @@
     align-items: center;
     margin-bottom: 0.375em;
     padding-bottom: 0;
+    border-radius: 7px;
   }
 
   .faq-question {
