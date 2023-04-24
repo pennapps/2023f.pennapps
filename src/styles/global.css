@@ -456,7 +456,7 @@
   }
 
   .faq-collapsible {
-    @apply bg-sand py-1 px-3;
+    @apply bg-darkpurple py-1 px-3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -465,13 +465,19 @@
   }
 
   .faq-question {
-    @apply bg-sand py-1 px-3;
+    @apply text-pastelpurple bg-darkpurple py-1 px-3;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
   }
 
   .faq-answer {
     @apply px-5 pb-0.5;
+    @apply [&>p]:text-pastelpurple;
+  }
+
+  .faq-title {
+    @apply text-pinkpurple;
+    text-align: center;
   }
 
   .sponsor-logo-container {
