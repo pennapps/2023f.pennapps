@@ -1,8 +1,4 @@
 import * as React from 'react'
-//import ReactMarkdown from 'react-markdown'
-//import caImg from '../images/CampusAmbassadors.png';
-//import hackImg from '../images/CollegeHackathon.png';
-//import paDiffImg from '../images/PennAppsDifference.png';
 import aboutImg from '../images/ABOUT.png';
 
 const About = ({content}) => {
@@ -32,32 +28,6 @@ const About = ({content}) => {
       </div>
     </div>
   )
-  /*
-  const lines = content.split("\n\n").slice(1);
-  const images = [hackImg, paDiffImg, caImg];
-
-  const paragraphs = images.map((image, i) =>
-    <div className="about-row">
-        <img src={image}/>
-        <div className="about-paragraph">
-            <div className="about-header">
-              <ReactMarkdown>{lines[2*i + 1]}</ReactMarkdown>
-            </div>
-            <ReactMarkdown>{lines[2*(i + 1)]}</ReactMarkdown>
-        </div>
-    </div>
-  );
-
-  return (
-    <div>
-        <a className="anchor" id="about"/>
-        <div className="section" key="about" id="about">
-            <ReactMarkdown>{lines[0]}</ReactMarkdown>
-            {paragraphs}
-        </div>
-    </div>
-  );
-  */
 };
 
 export default About

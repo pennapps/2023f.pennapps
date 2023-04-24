@@ -2,17 +2,6 @@ import React from 'react'
 import coin from '../images/apply_button.png'
 import apply_bg from '../images/apply_bg.png'
 
-//import Header from '../../content/heading.mdx'
-/*
-# PennApps XXIII
-
-## September 2-4, 2022
-
-### Beleaf it or not, applications are open!
-
-Hosted at the nation's first university, PennApps is the original college hackathon. Come join us to learn something new, build an app, or start a company. Let’s continue to make history together.
-
-*/
 function Heading() {
   return (
     <div className="heading-parent">
