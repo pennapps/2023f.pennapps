@@ -24,7 +24,7 @@ function Navbar() {
 
     return(
       <nav>
-        <a href="#top"><img src={logo}/></a>
+        <a href="#top"><img src={logo} className="navlinks-logo"/></a>
         <div className="navlinks-banner">
           <Links links={links}/>
         </div>

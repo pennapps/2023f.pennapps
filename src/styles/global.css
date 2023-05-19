@@ -279,11 +279,12 @@
     @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
   }
 
-  .landing {@apply flex flex-col justify-center items-center z-[1];
+  .landing {
+    @apply flex flex-col justify-center items-center;
   }
 
   .landing-background {
-    @apply w-screen min-h-[100vh];
+    @apply flex h-full min-h-[100%] z-[1];
   }
 
   .landing-image {
@@ -295,16 +296,16 @@
   }
 
   .landing-countdown {
-    @apply flex flex-row sm:space-x-3 space-x-2 z-[1];
-    margin-top: -27vw;
-    width: 48%;
+    @apply flex flex-row sm:space-x-3 space-x-2 z-[2];
+    margin-top: -23vw;
+    width: 42%;
     justify-content: space-between;
   }
 
   .landing-countdown-square {
     @apply w-[25vw] h-[22vw] sm:w-[14.7vw] sm:h-[14vw];
     @apply md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
-    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[19vw];
+    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[15vw];
     @apply flex flex-col items-center justify-center;
   }
 
@@ -317,12 +318,12 @@
   }
 
   .landing-ctdn-amt {
-    @apply font-bold text-[10vw] text-brightyellow mb-5;
+    @apply font-bold text-[7vw] text-brightyellow lg:mb-5;
     font-family: Terminal Grotesque Open, sans-serif;
   }
 
   .landing-ctdn-unit {
-    @apply text-[2.5vw] text-peach mb-5;
+    @apply text-[2vw] text-peach mb-5;
     font-family: Terminal Grotesque Open, sans-serif;
     margin-top: -50%;
   }
@@ -418,6 +419,10 @@
     @apply flex h-full flex-row items-center min-w-[50%] justify-end pl-0;
   }
 
+  .navlinks-logo {
+    @apply h-8;
+  }
+
   #mlh-trust-badge {
     @apply md:px-[8%] lg:px-[4%] pt-20 shrink-0;
   }
@@ -431,11 +436,11 @@
   }
 
   .links button {
-    @apply mt-1 bg-brightyellow text-xl text-periwinkle px-6 py-3 rounded-full hover:bg-yellow font-bold;
+    @apply mt-1 bg-brightyellow text-xl text-periwinkle px-5 py-2 rounded-full hover:bg-yellow font-bold;
   }
 
   .mobile-nav {
-    @apply sm:hidden absolute bg-white top-20 right-0 flex flex-col;
+    @apply sm:hidden absolute bg-brightyellow top-20 right-0 flex flex-col;
     @apply overflow-hidden transition-all ease-in-out duration-500;
   }
 
