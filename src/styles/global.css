@@ -68,10 +68,15 @@
     font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   }
 
+  @font-face {font-family: "Karmatic Arcade";
+      src:url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.woff") format("woff"), url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.eot?#iefix") format("embedded-opentype");
+      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+  }
 
   .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
   .tk-futura-pt { font-family: "futura-pt",sans-serif; }
   .tk-terminal-groteque { font-family: "Terminal Grotesque Open", sans-serif; }
+  .tk-karmatic-arcade { font-family: "Karmatic Arcade", sans-serif; }
 
   h1 {
     @apply font-bold text-3xl text-green mb-5;
@@ -133,7 +138,6 @@
   .image-row{
     @apply mb-20 mt-20;
     position: relative;
-    @apply px-[15%] md:px-[20%] lg:px-[30%] text-center mb-4 pt-24;
   }
 
   .apply-content{
@@ -147,7 +151,7 @@
   #apply-bg{
     position: relative;
     width: 100%;
-  }   
+  }
 
   .heading h1{
     @apply px-[20%] text-black md:px-[20%] lg:px-[10%];
@@ -215,7 +219,6 @@
     background-color: #00B7FF;
     border-radius: 50%;
   }
-
   .blue-bottom-left{
     position: relative;
     height: 19px;
@@ -233,9 +236,8 @@
     bottom: 10px;
     background-color: #00B7FF;
     border-radius: 50%;
-    @apply text-green mb-8;
   }
-  
+
   .purple-top-left{
     position: relative;
     height: 19px;
@@ -273,7 +275,6 @@
     border-radius: 50%;
   }
 
-
   .heading button {
     @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
   }
@@ -282,8 +283,7 @@
   }
 
   .landing-background {
-    @apply w-screen min-h-[50rem];
-    @apply h-screen flex flex-col justify-center items-center z-[1];
+    @apply w-screen min-h-[100vh];
   }
 
   .landing-image {
@@ -297,7 +297,6 @@
   .landing-countdown {
     @apply flex flex-row sm:space-x-3 space-x-2 z-[1];
     margin-top: -27vw;
-    margin-bottom: 10vw;
     width: 48%;
     justify-content: space-between;
   }
@@ -305,7 +304,7 @@
   .landing-countdown-square {
     @apply w-[25vw] h-[22vw] sm:w-[14.7vw] sm:h-[14vw];
     @apply md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
-    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[28vw];
+    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[19vw];
     @apply flex flex-col items-center justify-center;
   }
 
@@ -333,17 +332,13 @@
     margin-bottom: -0.5rem;
   }
 
-  .logistics-background {
-    @apply w-screen min-h-[50rem] object-cover;
-  }
-
   .logistics-anchor {
     @apply relative top-[-200px] invisible;
   }
 
   .logistics-body {
     @apply relative;
-    @apply bg-brightblue rounded-lg w-[80%] md:w-[40rem] px-14 py-10; 
+    @apply bg-brightblue rounded-lg w-[80%] md:w-[40rem] px-14 py-10;
   }
 
   .logistics-icons {
@@ -394,6 +389,7 @@
     height: auto;
     width: 55%;
   }
+
   .about-header{
     @apply text-center;
     background-color: #5562E9;
@@ -405,8 +401,8 @@
   }
 
   nav {
-    @apply text-green bg-white px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
-    font-family: proxima-nova, sans-serif;
+    @apply text-green bg-periwinkle px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
   nav a {
@@ -431,7 +427,11 @@
   }
 
   .links {
-    @apply flex flex-row space-x-5 md:space-x-11;
+    @apply flex flex-row space-x-5 md:space-x-3;
+  }
+
+  .links button {
+    @apply mt-1 bg-brightyellow text-xl text-periwinkle px-6 py-3 rounded-full hover:bg-yellow font-bold;
   }
 
   .mobile-nav {
@@ -453,7 +453,7 @@
 
   .anchor {
     @apply relative top-[-100px] invisible;
-  } 
+  }
 
   .faq-collapsible {
     @apply bg-darkpurple py-1 px-3;

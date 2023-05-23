@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import landingBg from '../images/landingBackground.png'
+import landingBg from '../images/landing_bg.svg'
 import { VscFoldDown } from "react-icons/vsc"
 
 const target = new Date("September 2 2023 11:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00

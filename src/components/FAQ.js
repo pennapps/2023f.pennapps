@@ -40,7 +40,7 @@ const FAQ = ({content}) => {
 
   return (
     <div key="faqs" className="section">
-        <a className="anchor" id="faqs"/>
+        <a className="anchor" id="FAQs"/>
         <h1 className="faq-title">FAQs</h1>
         {output}
     </div>
