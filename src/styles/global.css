@@ -136,62 +136,36 @@
   }
 
   .image-row{
-    @apply mb-20 mt-20;
-    position: relative;
+    @apply relative mb-20 mt-20;
   }
 
   .apply-content{
-    top: 25%;
-    left: 50%;
-    position: absolute;
+    @apply top-[25%] left-[50%] absolute w-[15%];
     z-index: 1;
-    width: 15%;
   }
 
   #apply-bg{
-    position: relative;
-    width: 100%;
+    @apply relative w-[100%];
   }
 
   .heading h1{
-    @apply px-[20%] text-black md:px-[20%] lg:px-[10%];
-    color: #451DB9;
-    font-size: 350%;
-    line-height: 80%;
-    margin-top: 2%;
+    @apply px-[20%] md:px-[20%] lg:px-[10%] text-[#451DB9] text-[350%] leading-[80%] mt-[2%];
   }
 
   .heading h2{
-    @apply px-[5%] ;
-    color: #00639A;
-    font-size: 200%;
-    line-height: 160%;
+    @apply px-[5%] text-[#00639A] text-[200%] leading-[160%];
   }
 
   .header-box {
-    border-width: 15px;
-    background-color: #BEA8FF;
-    border-color: #9773FF;
-    width: 100%;
+    @apply border-[15px] bg-[#BEA8FF] border-[#9773FF] w-[100%];
   }
 
   .desc-box{
-    position: relative;
-    border-width: 15px;
-    background-color: #C1ECFF;
-    height: auto;
-    width: 100%;
-    border-color: #00B7FF;
-  }
-
-  .dots{
-    display: flex;
-    justify-content: space-between;
+    @apply relative border-[15px] bg-[#C1ECFF] h-auto w-[100%] border-[#00B7FF];
   }
 
   .row{
-    display: flex;
-    justify-content: center;
+    @apply flex justify-center;
   }
 
   .box{
@@ -201,89 +175,24 @@
     border-color: #6D79FF;
   }
 
-  .blue-top-left{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    left: 10px;
-    top: 10px;
-    background-color: #00B7FF;
-    border-radius: 50%;
-  }
-  .blue-top-right{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    right: 10px;
-    top: 10px;
-    background-color: #00B7FF;
-    border-radius: 50%;
-  }
-  .blue-bottom-left{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    left: 10px;
-    bottom: 10px;
-    background-color: #00B7FF;
-    border-radius: 50%;
-  }
-  .blue-bottom-right{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    right: 10px;
-    bottom: 10px;
-    background-color: #00B7FF;
-    border-radius: 50%;
+  .dots{
+    @apply flex justify-between;
   }
 
-  .purple-top-left{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    left: 10px;
-    top: 10px;
-    background-color: #9773FF;
-    border-radius: 50%;
-  }
-  .purple-top-right{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    right: 10px;
-    top: 10px;
-    background-color: #9773FF;
-    border-radius: 50%;
-  }
-  .purple-bottom-left{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    left: 10px;
-    bottom: 10px;
-    background-color: #9773FF;
-    border-radius: 50%;
-  }
-  .purple-bottom-right{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    right: 10px;
-    bottom: 10px;
-    background-color: #9773FF;
-    border-radius: 50%;
+  .dot{
+    @apply h-[19px] w-[19px] m-[10px] rounded-full;
   }
 
   .heading button {
     @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
   }
 
-  .landing {@apply flex flex-col justify-center items-center z-[1];
+  .landing {
+    @apply flex flex-col justify-center items-center;
   }
 
   .landing-background {
-    @apply w-screen min-h-[100vh];
+    @apply flex h-full min-h-[100%] z-[1];
   }
 
   .landing-image {
@@ -295,16 +204,16 @@
   }
 
   .landing-countdown {
-    @apply flex flex-row sm:space-x-3 space-x-2 z-[1];
-    margin-top: -27vw;
-    width: 48%;
+    @apply flex flex-row sm:space-x-3 space-x-2 z-[2];
+    margin-top: -23vw;
+    width: 42%;
     justify-content: space-between;
   }
 
   .landing-countdown-square {
     @apply w-[25vw] h-[22vw] sm:w-[14.7vw] sm:h-[14vw];
     @apply md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
-    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[19vw];
+    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[15vw];
     @apply flex flex-col items-center justify-center;
   }
 
@@ -317,12 +226,12 @@
   }
 
   .landing-ctdn-amt {
-    @apply font-bold text-[10vw] text-brightyellow mb-5;
+    @apply font-bold text-[7vw] text-brightyellow lg:mb-5;
     font-family: Terminal Grotesque Open, sans-serif;
   }
 
   .landing-ctdn-unit {
-    @apply text-[2.5vw] text-peach mb-5;
+    @apply text-[2vw] text-peach mb-5;
     font-family: Terminal Grotesque Open, sans-serif;
     margin-top: -50%;
   }
@@ -362,42 +271,28 @@
   }
 
   .about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center
+    @apply px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+  }
+
+  .about-section img{
+    @apply mx-auto w-[50%];
   }
 
   .about-paragraph h2{
-    font-size: 50px;
-    line-height: 80px;
-    color: #FFD3C9;
+    @apply text-5xl text-center m-auto text-[#FFD3C9];
   }
 
   .about-paragraph p{
-    font-size: 120%;
-    line-height: 40px;
-    @apply text-justify;
-    color: #FFD3C9;
+    @apply text-lg leading-8 text-[#FFD3C9];
   }
 
   .about-paragraph{
-    @apply text-justify mt-10 mb-10;
+    @apply text-left mt-10 mb-10 px-8 py-6 h-auto rounded-[1rem];
     background-color: #31398C;
-    padding: 30px;
-    border-radius: 40px;
-
-    height: auto;
-    width: 55%;
   }
 
   .about-header{
-    @apply text-center;
-    background-color: #5562E9;
-    border-radius: 20px;
-    color: #FFD3C9;
-    width: 100%;
-    left: 25%;
-    margin-bottom: 10px;
+    @apply rounded-[1rem] py-6 px-2 w-[100%] mb-5 bg-[#5562E9] text-[#FFD3C9] left-[25%];
   }
 
   nav {
@@ -418,6 +313,10 @@
     @apply flex h-full flex-row items-center min-w-[50%] justify-end pl-0;
   }
 
+  .navlinks-logo {
+    @apply h-8;
+  }
+
   #mlh-trust-badge {
     @apply md:px-[8%] lg:px-[4%] pt-20 shrink-0;
   }
@@ -431,11 +330,11 @@
   }
 
   .links button {
-    @apply mt-1 bg-brightyellow text-xl text-periwinkle px-6 py-3 rounded-full hover:bg-yellow font-bold;
+    @apply mt-1 bg-brightyellow text-xl text-periwinkle px-5 py-2 rounded-full hover:bg-yellow font-bold;
   }
 
   .mobile-nav {
-    @apply sm:hidden absolute bg-white top-20 right-0 flex flex-col;
+    @apply sm:hidden absolute bg-brightyellow top-20 right-0 flex flex-col;
     @apply overflow-hidden transition-all ease-in-out duration-500;
   }
 

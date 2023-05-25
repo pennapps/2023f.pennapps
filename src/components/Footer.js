@@ -2,9 +2,9 @@ import React from 'react'
 import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
 import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
-import footer from "../images/footer.svg";
-import footer_mobile from "../images/footer_mobile.svg";
-import penn_logo_blue from "../images/penn_logo_blue.svg";
+import footer from "../images/footer-background.svg";
+import footer_mobile from "../images/footer-background.svg";
+import penn_logo_white from "../images/penn_logo_white.svg";
 
 
 
@@ -48,7 +48,7 @@ function Footer() {
             </div>
             <div className="flex flex-col space-y-0 min-w-[175px]">
               <p className="footer-penn-logo-text">Organized with support from:</p>
-              <img src={penn_logo_blue} alt="penn_logo_blue" className="footer-penn-logo" />
+              <img src={penn_logo_white} alt="penn_logo_blue" className="footer-penn-logo" />
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ function Footer() {
             </div>
             <div className="flex flex-col space-y-0">
               <p className="footer-penn-logo-text">Organized with <br/> support from:</p>
-              <img src={penn_logo_blue} alt="penn_logo_blue" className="footer-penn-logo" />
+              <img src={penn_logo_white} alt="penn_logo_blue" className="footer-penn-logo" />
             </div>
           </div>
         </div>
