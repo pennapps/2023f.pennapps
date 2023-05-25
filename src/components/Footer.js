@@ -23,7 +23,7 @@ function Footer() {
                 </a>
               </div>
               <div>
-                <a href="http://pages.pennapps.com/policies/conduct/">Code of Conduct</a>
+                <a href="https://hackp.ac/coc">Code of Conduct</a>
               </div>
               <div className="flex flex-col space-y-2">
                 <a href="https://facebook.com/pennapps" target="_blank">
@@ -66,7 +66,7 @@ function Footer() {
               </a>
             </div>
             <div className="flex flex-col space-y-2">
-              <a href="http://pages.pennapps.com/policies/conduct/">Code of Conduct</a>
+              <a href="https://hackp.ac/coc">Code of Conduct</a>
               <div className="footer-social-media-mobile">
                 <a href="https://facebook.com/pennapps" target="_blank"><FaFacebook size={22} /></a>
                 <a href="https://twitter.com/pennapps" target="_blank"><FaTwitter size={22} /></a>
