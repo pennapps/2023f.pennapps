@@ -80,7 +80,7 @@
 
   h1 {
     @apply font-bold text-3xl text-green mb-5;
-    font-family: Terminal Grotesque, sans-serif;
+    font-family: Terminal Grotesque Open, sans-serif;
   }
 
 
