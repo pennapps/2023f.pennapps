@@ -1,6 +1,7 @@
 @tailwind base;
 @layer base {
   @import url("https://p.typekit.net/p.css?s=1&k=tri7gwo&ht=tk&f=139.140.173.174.175.176.10881.10882.10884.10885&a=21288430&app=typekit&e=css");
+  
 
   @font-face {
       font-family:"proxima-nova";
@@ -68,6 +69,17 @@
     font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   }
 
+  @font-face {
+    font-family: 'terminal_grotesque'; 
+    src: url('../font/term_gro/terminal-grotesque-webfont.eot') format('embedded-opentype'),
+         url('../font/term_gro/terminal-grotesque-webfont.woff2') format('woff2'),
+         url('../font/term_gro/terminal-grotesque-webfont.woff') format('woff'),
+         url('../font/term_gro/terminal-grotesque-webfont.ttf') format('truetype'),
+         url('../font/term_gro/terminal-grotesque-webfont.svg#terminal_grotesqueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
   @font-face {font-family: "Karmatic Arcade";
       src:url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.woff") format("woff"), url("//db.onlinewebfonts.com/t/466b3a22453e8a0e656f0901c45d2bc0.eot?#iefix") format("embedded-opentype");
       font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
@@ -75,33 +87,33 @@
 
   .tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
   .tk-futura-pt { font-family: "futura-pt",sans-serif; }
-  .tk-terminal-groteque { font-family: "Terminal Grotesque Open", sans-serif; }
+  .tk-terminal-groteque { font-family: "terminal_grotesque", sans-serif; }
   .tk-karmatic-arcade { font-family: "Karmatic Arcade", sans-serif; }
 
   h1 {
     @apply font-bold text-3xl text-green mb-5;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
   }
 
 
   h2 {
     @apply font-bold text-2xl text-green mb-1.5;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
   }
 
   h3 {
     @apply font-normal text-xl text-green mb-1.5;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
   }
 
   h4 {
     @apply font-normal text-green;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
   }
 
   p {
     @apply font-normal text-green mb-2;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
     font-size: 1.0em;
   }
 
@@ -112,7 +124,7 @@
 
   ul {
     @apply font-normal text-green;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
     font-size: 1.3em;
     list-style-type: circle;
     padding: 10px
@@ -120,7 +132,7 @@
 
   ol {
     @apply font-normal text-green;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
     font-size: 1.3em;
     padding: 10px
   }
@@ -319,12 +331,12 @@
 
   .landing-ctdn-amt {
     @apply font-bold text-[7vw] text-brightyellow lg:mb-5;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
   }
 
   .landing-ctdn-unit {
     @apply text-[2vw] text-peach mb-5;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
     margin-top: -50%;
   }
 
@@ -403,7 +415,7 @@
 
   nav {
     @apply text-green bg-periwinkle px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
-    font-family: Terminal Grotesque Open, sans-serif;
+    font-family: terminal_grotesque, sans-serif;
   }
 
   nav a {
