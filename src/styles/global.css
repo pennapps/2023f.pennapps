@@ -144,7 +144,8 @@
 
 @tailwind components;
 @layer components {
-  .heading {@apply text-center;
+  .heading {
+    @apply text-center;
   }
 
   .image-row{
@@ -161,11 +162,11 @@
   }
 
   .heading h1{
-    @apply px-[20%] md:px-[20%] lg:px-[10%] text-[#451DB9] text-[350%] leading-[80%] mt-[2%];
+    @apply md:px-[5%] my-[-10px] lg:px-[4%] text-[#451DB9] text-[3.50em] leading-[1em] md:w-[11em] md:min-w-[10em] lg:max-w-[10em];
   }
 
   .heading h2{
-    @apply px-[5%] text-[#00639A] text-[200%] leading-[160%];
+    @apply px-[2.25rem] my-[-10px] text-[#00639A] text-[2rem] leading-[2.4rem] md:w-[22.5em] lg:w-[30em] max-w-[30em];
   }
 
   .header-box {
@@ -181,10 +182,7 @@
   }
 
   .box{
-    width: calc((100% - 300px) / 2);
-    border-width: 15px;
-    background-color: #5562E9;
-    border-color: #6D79FF;
+    @apply lg:w-[100%] md:w-[40%] sm:w-[20%];
   }
 
   .dots{
