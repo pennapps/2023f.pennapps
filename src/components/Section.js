@@ -18,7 +18,6 @@ const Section = ({content, id}) => {
           </div>
         </div>
       </div>
-      <div id="puzzlepiece3"></div>
     </div>
   )
 }
