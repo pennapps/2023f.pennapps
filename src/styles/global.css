@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   @import url("https://p.typekit.net/p.css?s=1&k=tri7gwo&ht=tk&f=139.140.173.174.175.176.10881.10882.10884.10885&a=21288430&app=typekit&e=css");
-  
+
 
   @font-face {
       font-family:"proxima-nova";
@@ -70,7 +70,7 @@
   }
 
   @font-face {
-    font-family: 'terminal_grotesque'; 
+    font-family: 'terminal_grotesque';
     src: url('../font/term_gro/terminal-grotesque-webfont.eot') format('embedded-opentype'),
          url('../font/term_gro/terminal-grotesque-webfont.woff2') format('woff2'),
          url('../font/term_gro/terminal-grotesque-webfont.woff') format('woff'),
@@ -354,8 +354,44 @@
 
 
   .section {
-    @apply px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    @apply px-[12%] md:px-[20%] lg:px-[27.5%] pt-12;
     margin-bottom: -0.5rem;
+  }
+
+  #punch-holes {
+    background:
+      radial-gradient(circle at top left, transparent calc(2vh + 5vw), #00B7FF 0) top left,
+      radial-gradient(circle at top right, transparent calc(2vh + 5vw), #00B7FF 0) top right,
+      radial-gradient(circle at top center, transparent calc(2vh + 5vw), #00B7FF 0) top center,
+      radial-gradient(circle at bottom right, transparent calc(2vh + 5vw), #00B7FF 0) bottom right,
+      radial-gradient(circle at bottom center, transparent calc(2vh + 5vw), #00B7FF 0) bottom center,
+      radial-gradient(circle at bottom left, transparent calc(2vh + 5vw), #00B7FF 0) bottom left;
+    background-size: 34% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .apply-box {
+    @apply lg:px-[5rem] py-[8rem] px-[2rem];
+  }
+
+  .apply-border{
+    @apply bg-[#10104A] rounded-[4em] px-[1rem] py-[1em];
+  }
+
+  .apply-header{
+    @apply bg-pacificblue text-center px-2 py-1 rounded-t-[3.175em];
+  }
+  .apply-header h1{
+    @apply leading-[3rem] text-[#10104A] mt-4;
+  }
+
+  .apply-text{
+    @apply bg-pacificblue rounded-b-[3.175em] mt-4 px-6 pt-5 pb-[0.05em];
+  }
+
+  .apply-text p{
+    @apply text-[#10104A] mb-10;
+    font-size: 20px;
   }
 
   .anchor {
