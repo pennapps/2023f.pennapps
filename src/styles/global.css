@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   @import url("https://p.typekit.net/p.css?s=1&k=tri7gwo&ht=tk&f=139.140.173.174.175.176.10881.10882.10884.10885&a=21288430&app=typekit&e=css");
-  
+
 
   @font-face {
       font-family:"proxima-nova";
@@ -70,7 +70,7 @@
   }
 
   @font-face {
-    font-family: 'terminal_grotesque'; 
+    font-family: 'terminal_grotesque';
     src: url('../font/term_gro/terminal-grotesque-webfont.eot') format('embedded-opentype'),
          url('../font/term_gro/terminal-grotesque-webfont.woff2') format('woff2'),
          url('../font/term_gro/terminal-grotesque-webfont.woff') format('woff'),
@@ -390,7 +390,8 @@
   }
 
   .apply-text p{
-    @apply text-[#10104A] text-3xl mb-10;
+    @apply text-[#10104A] mb-10;
+    font-size: 20px;
   }
 
   .anchor {
