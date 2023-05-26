@@ -362,6 +362,32 @@
     @apply relative top-[-100px] invisible;
   }
 
+  .faq-section {
+    @apply pt-12;
+    margin-bottom: -0.5rem;
+  }
+
+  .faq-content{
+    @apply lg:px-[6%] mb-12;
+  }
+
+  .faq-lside{
+    @apply w-screen top-0;
+    background-image: url('../images/FAQBGLeft.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+    height: 1000px;
+  }
+  .faq-rside{
+    @apply w-screen top-0;
+    background-image: url('../images/FAQBGRight.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto;
+    height: 1000px;
+  }
+
   .faq-collapsible {
     @apply bg-darkpurple py-1 px-3;
     display: flex;
@@ -373,7 +399,7 @@
   }
 
   .faq-question {
-    @apply text-pastelpurple bg-darkpurple py-1 px-3;
+    @apply py-1 px-3;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
   }
