@@ -279,28 +279,51 @@
   }
 
   .about-section {
-    @apply px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    @apply px-[10%] md:px-[15%] lg:px-[25%];
   }
 
-  .about-section img{
-    @apply mx-auto w-[50%];
+  #about-title{
+    @apply mx-auto w-[30%];
   }
 
   .about-paragraph h2{
-    @apply text-5xl text-center m-auto text-[#FFD3C9];
+    @apply text-4xl text-center m-auto text-[#10104A];
   }
 
   .about-paragraph p{
-    @apply text-lg leading-8 text-[#FFD3C9];
+    @apply text-lg leading-8 text-[#10104A];
   }
 
   .about-paragraph{
     @apply text-left mt-10 mb-10 px-8 py-6 h-auto rounded-[1rem];
-    background-color: #31398C;
   }
 
   .about-header{
-    @apply rounded-[1rem] py-6 px-2 w-[100%] mb-5 bg-[#5562E9] text-[#FFD3C9] left-[25%];
+    @apply rounded-[1rem] py-4 px-2 w-[100%] mb-5 text-[#FFD3C9] left-[25%];
+  }
+
+  #about-paragraph-college-hackathon{
+    @apply bg-[#FFF2AB]
+  }
+
+  #about-header-college-hackathon{
+    @apply bg-[#FFD073]
+  }
+
+  #about-paragraph-pennapps-difference{
+    @apply bg-[#FFD3C9]
+  }
+
+  #about-header-pennapps-difference{
+      @apply bg-[#F9A084]
+  }
+
+  #about-paragraph-campus-ambassadors{
+    @apply bg-[#FFADCC]
+  }
+
+  #about-header-campus-ambassadors{
+      @apply bg-[#FF7AAD]
   }
 
   nav {
