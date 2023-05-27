@@ -153,7 +153,7 @@
   }
 
   .apply-content{
-    @apply top-[25%] left-[50%] absolute w-[15%];
+    @apply top-[23%] left-[50%] absolute w-[20%];
     z-index: 1;
   }
 
@@ -371,7 +371,7 @@
   }
 
   .apply-box {
-    @apply lg:px-[5rem] py-[8rem] px-[2rem];
+    @apply lg:px-[2rem] py-[8rem] px-[2rem];
   }
 
   .apply-border{
