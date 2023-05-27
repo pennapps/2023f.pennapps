@@ -417,8 +417,16 @@
     font-size: 20px;
   }
 
+  #ghosts {
+    @apply mx-auto pt-16 pb-2 w-[75%];
+  }
+
   .anchor {
     @apply relative top-[-100px] invisible;
+  }
+
+  #faq-title{
+    @apply mx-auto py-8 w-[11%];
   }
 
   .faq-section {
