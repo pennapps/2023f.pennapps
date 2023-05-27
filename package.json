@@ -7,13 +7,14 @@
   "keywords": [
     "gatsby"
   ],
+  "homepage": "https://2023f.pennapps.com",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
