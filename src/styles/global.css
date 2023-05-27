@@ -417,6 +417,10 @@
     font-size: 20px;
   }
 
+  #ghosts {
+    @apply mx-auto pt-16 pb-2 w-[75%];
+  }
+
   .anchor {
     @apply relative top-[-100px] invisible;
   }
