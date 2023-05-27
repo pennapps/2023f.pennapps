@@ -421,6 +421,10 @@
     @apply relative top-[-100px] invisible;
   }
 
+  #faq-title{
+    @apply mx-auto py-8 w-[11%];
+  }
+
   .faq-section {
     @apply pt-12;
     margin-bottom: -0.5rem;
