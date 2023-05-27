@@ -1,6 +1,6 @@
 import React from 'react'
-import coin from '../images/apply_button.png'
-import apply_bg from '../images/apply_bg.png'
+import apply_button from '../images/apply_button.svg'
+import apply_bg from '../images/apply_bg.svg'
 
 /*
 .dots{
@@ -14,7 +14,7 @@ import apply_bg from '../images/apply_bg.png'
 function Heading() {
 
   return (
-    <div className="heading-parent"> 
+    <div className="heading-parent">
       <div className="row bg-[#31398C]">
         <div className="box bg-[#6D79FF] border-[#5562E9] border-r-[15px] border-b-[15px] w-screen h-[18vh] rounded-tl-[3.5em]"></div>
         <div className="box bg-[#5562E9] border-[#6D79FF] border-l-[15px] border-b-[15px] w-screen h-[18vh] rounded-tr-[3.5em]"></div>
@@ -44,7 +44,7 @@ function Heading() {
 
       <div className="image-row">
         <div className="apply-content">
-          <a href="#apply"><img src={coin}></img></a>
+          <a href="#Apply"><img src={apply_button}></img></a>
         </div>
         <img src={apply_bg} id="apply-bg"></img>
       </div>
