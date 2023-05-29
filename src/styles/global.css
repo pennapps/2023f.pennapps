@@ -310,6 +310,8 @@
   .landing-countdown {
     @apply flex flex-row sm:space-x-3 space-x-2 z-[2] mt-[-25vw] w-[42%];
     justify-content: space-between;
+    transform: perspective(2000px) rotateX(60deg) scaleY(2);
+    transform-origin: top;
   }
 
   .landing-countdown-square {
