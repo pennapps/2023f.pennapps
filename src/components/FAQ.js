@@ -56,7 +56,7 @@ const FAQ = ({content}) => {
     <div key="faqs" className="faq-section">
       <a className="anchor" id="FAQs"/>
       <img id="faq-title" src={faqTitle}></img>
-      <div className="faq-box flex justify-between w-screen">
+      <div className="faq-box flex justify-center">
         <div className="faq-lside"></div>
         <div className="faq-content">
           {output}
