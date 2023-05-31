@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `2023f.pennapps`,
     siteUrl: `http://2023f.pennapps.com/`,
-    favicon: `/static/favicon.ico`
+    favicon: `/static/favicon_io/favicon.ico`
   },
   plugins: ["gatsby-plugin-mdx",
     {
