@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   @import url("https://p.typekit.net/p.css?s=1&k=tri7gwo&ht=tk&f=139.140.173.174.175.176.10881.10882.10884.10885&a=21288430&app=typekit&e=css");
-  
+
 
   @font-face {
       font-family:"proxima-nova";
@@ -70,7 +70,7 @@
   }
 
   @font-face {
-    font-family: 'terminal_grotesque'; 
+    font-family: 'terminal_grotesque';
     src: url('../font/term_gro/terminal-grotesque-webfont.eot') format('embedded-opentype'),
          url('../font/term_gro/terminal-grotesque-webfont.woff2') format('woff2'),
          url('../font/term_gro/terminal-grotesque-webfont.woff') format('woff'),
@@ -144,147 +144,53 @@
 
 @tailwind components;
 @layer components {
-  .heading {@apply text-center;
+  .heading {
+    @apply text-center;
   }
 
   .image-row{
-    @apply mb-20 mt-20;
-    position: relative;
+    @apply relative mb-20 mt-20;
   }
 
   .apply-content{
-    top: 25%;
-    left: 50%;
-    position: absolute;
+    @apply top-[23%] left-[50%] absolute w-[20%];
     z-index: 1;
-    width: 15%;
   }
 
   #apply-bg{
-    position: relative;
-    width: 100%;
+    @apply relative w-[100%];
   }
 
   .heading h1{
-    @apply px-[20%] text-black md:px-[20%] lg:px-[10%];
-    color: #451DB9;
-    font-size: 350%;
-    line-height: 80%;
-    margin-top: 2%;
+    @apply md:px-[5%] my-[-10px] lg:px-[4%] text-[#451DB9] text-[3.50em] leading-[1em] md:w-[11em] md:min-w-[10em] lg:max-w-[10em];
   }
 
   .heading h2{
-    @apply px-[5%] ;
-    color: #00639A;
-    font-size: 200%;
-    line-height: 160%;
+    @apply px-[2.25rem] my-[-10px] text-[#00639A] text-[2rem] leading-[2.4rem] md:w-[22.5em] lg:w-[30em] max-w-[30em];
   }
 
   .header-box {
-    border-width: 15px;
-    background-color: #BEA8FF;
-    border-color: #9773FF;
-    width: 100%;
+    @apply border-[15px] bg-[#BEA8FF] border-[#9773FF] w-[100%];
   }
 
   .desc-box{
-    position: relative;
-    border-width: 15px;
-    background-color: #C1ECFF;
-    height: auto;
-    width: 100%;
-    border-color: #00B7FF;
-  }
-
-  .dots{
-    display: flex;
-    justify-content: space-between;
+    @apply relative border-[15px] bg-[#C1ECFF] h-auto w-[100%] border-[#00B7FF];
   }
 
   .row{
-    display: flex;
-    justify-content: center;
+    @apply flex justify-center;
   }
 
   .box{
-    width: calc((100% - 300px) / 2);
-    border-width: 15px;
-    background-color: #5562E9;
-    border-color: #6D79FF;
+    @apply lg:w-[100%] md:w-[40%] sm:w-[20%];
   }
 
-  .blue-top-left{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    left: 10px;
-    top: 10px;
-    background-color: #00B7FF;
-    border-radius: 50%;
-  }
-  .blue-top-right{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    right: 10px;
-    top: 10px;
-    background-color: #00B7FF;
-    border-radius: 50%;
-  }
-  .blue-bottom-left{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    left: 10px;
-    bottom: 10px;
-    background-color: #00B7FF;
-    border-radius: 50%;
-  }
-  .blue-bottom-right{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    right: 10px;
-    bottom: 10px;
-    background-color: #00B7FF;
-    border-radius: 50%;
+  .dots{
+    @apply flex justify-between;
   }
 
-  .purple-top-left{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    left: 10px;
-    top: 10px;
-    background-color: #9773FF;
-    border-radius: 50%;
-  }
-  .purple-top-right{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    right: 10px;
-    top: 10px;
-    background-color: #9773FF;
-    border-radius: 50%;
-  }
-  .purple-bottom-left{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    left: 10px;
-    bottom: 10px;
-    background-color: #9773FF;
-    border-radius: 50%;
-  }
-  .purple-bottom-right{
-    position: relative;
-    height: 19px;
-    width: 19px;
-    right: 10px;
-    bottom: 10px;
-    background-color: #9773FF;
-    border-radius: 50%;
+  .dot{
+    @apply h-[19px] w-[19px] m-[10px] rounded-full;
   }
 
   .heading button {
@@ -375,42 +281,51 @@
   }
 
   .about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center
+    @apply px-[10%] md:px-[15%] lg:px-[25%];
+  }
+
+  #about-title{
+    @apply mx-auto w-[30%];
   }
 
   .about-paragraph h2{
-    font-size: 50px;
-    line-height: 80px;
-    color: #FFD3C9;
+    @apply text-4xl text-center m-auto text-[#10104A];
   }
 
   .about-paragraph p{
-    font-size: 120%;
-    line-height: 40px;
-    @apply text-justify;
-    color: #FFD3C9;
+    @apply text-lg leading-8 text-[#10104A];
   }
 
   .about-paragraph{
-    @apply text-justify mt-10 mb-10;
-    background-color: #31398C;
-    padding: 30px;
-    border-radius: 40px;
-
-    height: auto;
-    width: 55%;
+    @apply text-left mt-10 mb-10 px-8 py-6 h-auto rounded-[1rem];
   }
 
   .about-header{
-    @apply text-center;
-    background-color: #5562E9;
-    border-radius: 20px;
-    color: #FFD3C9;
-    width: 100%;
-    left: 25%;
-    margin-bottom: 10px;
+    @apply rounded-[1rem] py-4 px-2 w-[100%] mb-5 text-[#FFD3C9] left-[25%];
+  }
+
+  #about-paragraph-college-hackathon{
+    @apply bg-[#FFF2AB]
+  }
+
+  #about-header-college-hackathon{
+    @apply bg-[#FFD073]
+  }
+
+  #about-paragraph-pennapps-difference{
+    @apply bg-[#FFD3C9]
+  }
+
+  #about-header-pennapps-difference{
+      @apply bg-[#F9A084]
+  }
+
+  #about-paragraph-campus-ambassadors{
+    @apply bg-[#FFADCC]
+  }
+
+  #about-header-campus-ambassadors{
+      @apply bg-[#FF7AAD]
   }
 
   nav {
@@ -464,12 +379,82 @@
 
 
   .section {
-    @apply px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    @apply px-[12%] md:px-[20%] lg:px-[27.5%] pt-12;
     margin-bottom: -0.5rem;
+  }
+
+  #punch-holes {
+    background:
+      radial-gradient(circle at top left, transparent calc(2vh + 5vw), #00B7FF 0) top left,
+      radial-gradient(circle at top right, transparent calc(2vh + 5vw), #00B7FF 0) top right,
+      radial-gradient(circle at top center, transparent calc(2vh + 5vw), #00B7FF 0) top center,
+      radial-gradient(circle at bottom right, transparent calc(2vh + 5vw), #00B7FF 0) bottom right,
+      radial-gradient(circle at bottom center, transparent calc(2vh + 5vw), #00B7FF 0) bottom center,
+      radial-gradient(circle at bottom left, transparent calc(2vh + 5vw), #00B7FF 0) bottom left;
+    background-size: 34% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .apply-box {
+    @apply lg:px-[2rem] py-[8rem] px-[2rem];
+  }
+
+  .apply-border{
+    @apply bg-[#10104A] rounded-[4em] px-[1rem] py-[1em];
+  }
+
+  .apply-header{
+    @apply bg-pacificblue text-center px-2 py-1 rounded-t-[3.175em];
+  }
+  .apply-header h1{
+    @apply leading-[3rem] text-[#10104A] mt-4;
+  }
+
+  .apply-text{
+    @apply bg-pacificblue rounded-b-[3.175em] mt-4 px-6 pt-5 pb-[0.05em];
+  }
+
+  .apply-text p{
+    @apply text-[#10104A] mb-10;
+    font-size: 20px;
+  }
+
+  #ghosts {
+    @apply mx-auto pt-16 pb-2 w-[75%];
   }
 
   .anchor {
     @apply relative top-[-100px] invisible;
+  }
+
+  #faq-title{
+    @apply mx-auto py-8 w-[11%];
+  }
+
+  .faq-section {
+    @apply pt-12;
+    margin-bottom: -0.5rem;
+  }
+
+  .faq-content{
+    @apply lg:px-[6%] mb-12;
+  }
+
+  .faq-lside{
+    @apply w-screen top-0;
+    background-image: url('../images/FAQBGLeft.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+    height: 1000px;
+  }
+  .faq-rside{
+    @apply w-screen top-0;
+    background-image: url('../images/FAQBGRight.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto;
+    height: 1000px;
   }
 
   .faq-collapsible {
@@ -483,7 +468,7 @@
   }
 
   .faq-question {
-    @apply text-pastelpurple bg-darkpurple py-1 px-3;
+    @apply py-1 px-3;
     font-family: proxima-nova, sans-serif;
     font-size: 1em;
   }

@@ -1,12 +1,13 @@
 {
-  "name": "2022f.pennapps",
+  "name": "2023f.pennapps",
   "version": "1.0.0",
   "private": true,
-  "description": "2022f.pennapps",
+  "description": "2023f.pennapps",
   "author": "pennapps",
   "keywords": [
     "gatsby"
   ],
+  "homepage": "https://2023f.pennapps.com",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",

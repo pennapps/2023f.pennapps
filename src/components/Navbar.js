@@ -1,32 +1,22 @@
 import React, {useState} from 'react'
 import logo from '../images/PennAppsLogo.png'
 import {FaBars} from "@react-icons/all-files/fa/FaBars";
+import mlhBadgeSrc from '../images/mlh-trust-badge-blue-2024.svg'
 
 
 //const links = ['about', 'apply', 'logistics', 'faqs', 'sponsors']
 const links = ['About', 'Apply', 'FAQs']
 
 function Navbar() {
-  const mlhHref = "https://mlh.io/seasons/2022/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=white"; // to be replaced
-  const mlhBadgeSrc = "https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg"; //to be replaced
-
-/*  return (
-    <nav>
-      <a className="nav-pennapps" href="#top">PENNAPPS</a>
-      <div className="navlinks-banner">
-        <Links links={links}/>
-        <a id="mlh-trust-badge" className="hidden sm:inline" href={mlhHref} target="_blank">
-          <img src={mlhBadgeSrc} alt="Major League Hacking 2023 Hackathon Season"/>
-        </a>
-      </div>
-    </nav>
-  ) */
-
+  const mlhHref = "https://mlh.io/seasons/2023/events";
     return(
       <nav>
         <a href="#top"><img src={logo} className="navlinks-logo"/></a>
         <div className="navlinks-banner">
           <Links links={links}/>
+          <a id="mlh-trust-badge" className="hidden sm:inline" href={mlhHref} target="_blank">
+            <img src={mlhBadgeSrc} alt="Major League Hacking 2024 Hackathon Season"/>
+          </a>
         </div>
       </nav>
     )

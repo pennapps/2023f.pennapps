@@ -1,33 +1,47 @@
 import * as React from 'react'
 import Collapsible from 'react-collapsible';
 import ReactMarkdown from 'react-markdown'
-import { VscTriangleDown, VscTriangleUp } from "react-icons/vsc"
+import {VscTriangleDown, VscTriangleUp} from "react-icons/vsc"
+import faqTitle from '../images/FAQs.svg'
+import bgleft from '../images/FAQBGLeft.svg'
+import bgright from '../images/FAQBGRight.svg'
 import '../styles/index.css'
+import aboutTitle from "../images/about.svg";
 
 const FAQ = ({content}) => {
   const faqs = content.split("## ").slice(1);
-  const output = faqs.map((faq) => {
+  const bg_colors = ['#14113E', '#F8E46725', '#43B2E525', '#EB73A225'];
+  const text_colors = ['#D3CCEF', '#F9F6E9', '#EDF9FF', '#FFF5F9'];
+
+  const output = faqs.map((faq, index) => {
     let tokens = faq.split("\n");
     let question = tokens[0];
     let answers = [];
     for (let i = 1; i < tokens.length; i++) {
       if (tokens[i]) {
         answers.push(
-          <div className="faq-answer" key={tokens[i]}>
-            <ReactMarkdown>{tokens[i]}</ReactMarkdown>
+          <div className="faq-answer"
+               key={tokens[i]}>
+            <ReactMarkdown>
+              {tokens[i]}
+            </ReactMarkdown>
           </div>
         );
       }
     }
-    let trigger_closed = <div className="faq-collapsible">
-      <h2 className="faq-question" key={question}>{`${question}`}</h2>
-      <VscTriangleDown style={{ color: "#FFFFFF", minWidth: "16px" }} />
+    let trigger_closed = <div className="faq-collapsible" style={
+      {backgroundColor: bg_colors[index % 4]}}>
+      <h2 className="faq-question" style={{color: text_colors[index % 4]}}
+          key={question}>{`${question}`}</h2>
+      <VscTriangleDown style={{color: "#FFFFFF", minWidth: "16px"}}/>
 
     </div>
 
-    let trigger_open = <div className="faq-collapsible">
-      <h2 className="faq-question" key={question}>{`${question}`}</h2>
-      <VscTriangleUp style={{ color: "#FFFFFF", minWidth: "16px" }} />
+    let trigger_open = <div className="faq-collapsible" style={
+      {backgroundColor: bg_colors[index % 4]}}>
+      <h2 className="faq-question" style={{color: text_colors[index % 4]}}
+          key={question}>{`${question}`}</h2>
+      <VscTriangleUp style={{color: "#FFFFFF", minWidth: "16px"}}/>
 
     </div>
 
@@ -39,10 +53,16 @@ const FAQ = ({content}) => {
   });
 
   return (
-    <div key="faqs" className="section">
-        <a className="anchor" id="FAQs"/>
-        <h1 className="faq-title">FAQs</h1>
-        {output}
+    <div key="faqs" className="faq-section">
+      <a className="anchor" id="FAQs"/>
+      <img id="faq-title" src={faqTitle}></img>
+      <div className="faq-box flex justify-between w-screen">
+        <div className="faq-lside"></div>
+        <div className="faq-content">
+          {output}
+        </div>
+        <div className="faq-rside"></div>
+      </div>
     </div>
   )
 }

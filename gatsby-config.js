@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
-    title: `2022f.pennapps`,
-    siteUrl: `http://2022f.pennapps.com/`,
+    title: `2023f.pennapps`,
+    siteUrl: `http://2023f.pennapps.com/`,
     favicon: `/static/favicon.ico`
   },
   plugins: ["gatsby-plugin-mdx",
