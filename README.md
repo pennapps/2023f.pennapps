@@ -46,4 +46,6 @@ Thank you to our hardworking dev team for their work on this website!
 * [@gumillie222](https://github.com/gumillie222)
 * [@geant04](https://github.com/geant04)
 * [@Cath3333](https://github.com/Cath3333)
+* [@sidhants25](https://github.com/sidhants25)
+* [@vcai122](https://github.com/vcai122)
 * [@fyy26](https://github.com/fyy26)
