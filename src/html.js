@@ -11,7 +11,8 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>PennApps XXIII</title>
+        <link rel="icon" href="/favicon_io/favicon.ico" />
+        <title>PennApps XXIV</title>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
