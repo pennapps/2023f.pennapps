@@ -44,9 +44,9 @@ function Heading() {
 
       <div className="image-row">
         <div className="apply-content">
-          <a href="#Apply"><img src={apply_button}></img></a>
+          <a href="https://apply.pennapps.com/" target="_blank"><img className="animated-button" src={apply_button}></img></a>
         </div>
-        <img src={apply_bg} id="apply-bg"></img>
+        <img className="animated-coin" src={apply_bg} id="apply-bg"></img>
       </div>
     </div>
   )

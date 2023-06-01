@@ -148,14 +148,28 @@
     @apply text-center;
   }
 
-  .image-row{
+  .image-row {
     @apply relative mb-20 mt-20;
   }
 
-  .apply-content{
+  .apply-content {
     @apply top-[23%] left-[50%] absolute w-[20%];
+    transition: all 0.5s ease;
     z-index: 1;
   }
+
+  .image-row:hover .apply-content {
+    @apply top-[19%] left-[48%] absolute w-[23%];
+  }
+
+  .image-row:hover .apply-content .animated-button {
+    content: url("../images/apply_button_hovered.svg");
+  }
+
+  .image-row:hover .animated-coin{
+    content: url("../images/apply_bg_hovered.svg");
+  }
+
 
   #apply-bg{
     @apply relative w-[100%];
