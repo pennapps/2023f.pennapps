@@ -1,11 +1,20 @@
 import * as React from 'react'
 import aboutTitle from '../images/about.svg';
+import aboutDots from '../images/about-dots-half.svg';
+import pacmanLeft from '../images/about-pacman-left.svg';
+import pacmanRight from '../images/about-pacman-right.svg';
 
 const About = ({content}) => {
   return (
     <div className="about-section">
       <a className="anchor" id="About"/>
-      <img id="about-title" src={aboutTitle}></img>
+      <div className="about-section-title">
+        <img id="about-title-dots" src={aboutDots}></img>
+        <img id="about-title-dots" src={aboutDots}></img>
+        <img id="about-title" src={aboutTitle}></img>
+        <img id="about-title-dots" src={aboutDots}></img>
+        <img id="about-title-dots" src={aboutDots}></img>
+      </div>
       <div className="about-paragraph" id="about-paragraph-college-hackathon">
         <div className="about-header" id="about-header-college-hackathon">
           <h2>The College Hackathon</h2>
@@ -18,6 +27,7 @@ const About = ({content}) => {
           aspect of a hackathon are the community it generates and skills that inexperienced hackers
           walk away with.</p>
       </div>
+      <img id="pacmanLeft" src={pacmanLeft}></img>
       <div className="about-paragraph" id="about-paragraph-pennapps-difference">
         <div className="about-header" id="about-header-pennapps-difference">
           <h2>The PennApps Difference</h2>
@@ -33,6 +43,7 @@ const About = ({content}) => {
           more learning opportunities and workshops throughout the weekend.
         </p>
       </div>
+      <img id="pacmanRight" src={pacmanRight}></img>
       <div className="about-paragraph" id="about-paragraph-campus-ambassadors">
         <div className="about-header" id="about-header-campus-ambassadors">
           <h2>Campus Ambassadors</h2>
