@@ -466,17 +466,15 @@
     @apply top-0 bg-right-top bg-contain md:w-[110vw] w-[0%];
     background-image: url('../images/FAQBG_Left.svg');
     background-repeat: no-repeat;
+    background-size: 400px, 400px;
     height: 900px;
-    max-height: 75vh;
-    overflow: hidden;
   }
   .faq-rside{
     @apply top-0 bg-left-top bg-contain md:w-[110vw] w-[0%];
     background-image: url('../images/FAQBG_Right.svg');
     background-repeat: no-repeat;
+    background-size: 400px, 400px;
     height: 900px;
-    max-height: 75vh;
-    overflow-x: hidden;
   }
 
   .faq-collapsible {
