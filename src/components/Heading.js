@@ -16,11 +16,11 @@ function Heading() {
   return (
     <div className="heading-parent">
       <div className="row bg-[#31398C]">
-        <div className="box bg-[#6D79FF] border-[#5562E9] border-r-[15px] border-b-[15px] w-screen h-[18vh] rounded-tl-[3.5em]"></div>
-        <div className="box bg-[#5562E9] border-[#6D79FF] border-l-[15px] border-b-[15px] w-screen h-[18vh] rounded-tr-[3.5em]"></div>
+        <div className="box bg-[#6D79FF] border-[#5562E9] border-r-[15px] border-b-[15px] w-screen md:h-[10em] h-[6.5em] rounded-tl-[3.5em]"></div>
+        <div className="box bg-[#5562E9] border-[#6D79FF] border-l-[15px] border-b-[15px] w-screen md:h-[10em] h-[6.5em] rounded-tr-[3.5em]"></div>
       </div>
       <div className="row">
-        <div className="box bg-[#5562E9] border-[#6D79FF] border-r-[15px] border-y-[15px] "></div>
+        <div className="box-mid bg-[#5562E9] border-[#6D79FF] border-r-[15px] border-y-[15px] "></div>
         <div className="heading">
           <div className="header-box">
             <RowDot color={"#9773FF"}/>
@@ -28,7 +28,7 @@ function Heading() {
             <RowDot color={"#9773FF"}/>
           </div>
         </div>
-        <div className="box bg-[#6D79FF] border-[#5562E9] border-l-[15px] border-y-[15px]"></div>
+        <div className="box-mid bg-[#6D79FF] border-[#5562E9] border-l-[15px] border-y-[15px]"></div>
       </div>
       <div className="row">
         <div className="box bg-[#6D79FF] border-[#5562E9] border-r-[15px] border-y-[15px]"></div>
@@ -39,7 +39,7 @@ function Heading() {
             <RowDot color={"#00B7FF"}/>
           </div>
         </div>
-        <div className="box bg-[#5562E9] border-[#6D79FF] border-l-[15px] border-y-[15px] "></div>
+        <div className="box bg-[#5562E9] border-[#6D79FF] border-l-[15px] border-y-[15px]"></div>
       </div>
 
       <div className="image-row">
