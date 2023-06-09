@@ -216,7 +216,7 @@
   .landing-countdown {
     @apply flex flex-row sm:space-x-3 space-x-2 z-[2] mt-[-25vw] w-[42%];
     justify-content: space-between;
-    transform: perspective(2000px) rotateX(68deg) scaleY(2.5);
+    transform: perspective(1500px) rotateX(68deg) scaleY(2.6);
     transform-origin: top;
   }
 
