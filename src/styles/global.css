@@ -308,7 +308,11 @@
 
 
   #about-title{
-    @apply mx-auto w-[30%] mr-5;
+    @apply mx-auto w-[30%] mr-10;
+  }
+
+  #about-title-dots {
+    @apply h-[50%];
   }
 
   .about-paragraph h2{
@@ -465,7 +469,7 @@
   }
 
   #faq-title {
-    @apply mx-5 w-[12.5%];
+    @apply mx-5 w-[12%];
   }
 
   .faq-content{

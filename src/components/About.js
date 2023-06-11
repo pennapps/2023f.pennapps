@@ -3,6 +3,7 @@ import aboutTitle from '../images/about.svg';
 import aboutDots from '../images/about-dots-half.svg';
 import pacmanLeft from '../images/about-pacman-left.svg';
 import pacmanRight from '../images/about-pacman-right.svg';
+import aboutDotsBottom from '../images/about-dots-bottom.svg';
 
 const About = ({content}) => {
   return (
@@ -10,9 +11,7 @@ const About = ({content}) => {
       <a className="anchor" id="About"/>
       <div className="about-section-title">
         <img id="about-title-dots" src={aboutDots}></img>
-        <img id="about-title-dots" src={aboutDots}></img>
         <img id="about-title" src={aboutTitle}></img>
-        <img id="about-title-dots" src={aboutDots}></img>
         <img id="about-title-dots" src={aboutDots}></img>
       </div>
       <div className="about-paragraph" id="about-paragraph-college-hackathon">
@@ -54,6 +53,7 @@ const About = ({content}) => {
           PennApps community and receive custom swag and perks at and before the event. Campus
           ambassadors have been announced.</p>
       </div>
+      <img id="about-dots-bottom" src={aboutDotsBottom}></img>
     </div>
   )
 };
