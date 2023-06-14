@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import landingBg from '../images/landing_bg.svg'
+import landingBg from '../images/landing-without-banner.svg'
 import { VscFoldDown } from "react-icons/vsc"
 import clouds from '../images/cloud.svg'
+import banner from '../images/banner.svg'
 
 const target = new Date("September 2 2023 11:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00
 
@@ -31,7 +32,7 @@ function Landing() {
       m = 0
       s = 0
     }
-    return {d, h, m, s}
+    return { d, h, m, s }
   }
 
   const timeUntil = getTimeUntil()
@@ -50,22 +51,26 @@ function Landing() {
   return (
     <div className="landing">
       <div className="clouds-container">
-      {cloudData.map((cloud, index) => (
-        <img
-          key={index}
-          src={cloud.src}
-          alt="Clouds"
-          className="clouds"
-          style={{ top: cloud.top, left: cloud.left }}
-        />
-      ))}
-    </div>
-      <img src={landingBg} className="landing-background"/>
+        {cloudData.map((cloud, index) => (
+          <img
+            key={index}
+            src={cloud.src}
+            alt="Clouds"
+            className="clouds"
+            style={{ top: cloud.top, left: cloud.left }}
+          />
+        ))}
+      </div>
+      <div className="sliding-banner">
+        <img src={banner} alt="Banner" className="banner-img" top="35%"  />
+      </div>
+
+      <img src={landingBg} className="landing-background" />
       <div className="landing-countdown relative">
-        <TimeSquare amt={timeUntil.d} unit={"DAYS"}/>
-        <TimeSquare amt={timeUntil.h} unit={"HOURS"}/>
-        <TimeSquare amt={timeUntil.m} unit={"MINUTES"}/>
-        <TimeSquare amt={timeUntil.s} unit={"SECONDS"}/>
+        <TimeSquare amt={timeUntil.d} unit={"DAYS"} />
+        <TimeSquare amt={timeUntil.h} unit={"HOURS"} />
+        <TimeSquare amt={timeUntil.m} unit={"MINUTES"} />
+        <TimeSquare amt={timeUntil.s} unit={"SECONDS"} />
       </div>
     </div>
   )

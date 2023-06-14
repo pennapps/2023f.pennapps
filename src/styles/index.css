@@ -339,6 +339,30 @@ h1 span {
   }
   }
 
+  .sliding-banner {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    display: inline-block;
+    animation: scrollBanner 20s linear infinite;
+    transform-origin: center;
+    position: absolute;
+    height: 100px;
+    scale: 1.2;
+  }
+  
+  @keyframes scrollBanner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
 
 
 /* ==========================================================================
