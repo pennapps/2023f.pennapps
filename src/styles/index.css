@@ -323,6 +323,22 @@ h1 span {
     padding-top: 90px;
 }
 
+.clouds {
+    position: absolute;
+    width: auto; 
+    height: auto; 
+    z-index: 1;
+    animation: cloudMovement 2s ease-in-out infinite alternate;
+}
+@keyframes cloudMovement {
+    0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(25px);
+  }
+  }
+
 
 
 /* ==========================================================================

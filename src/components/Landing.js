@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import landingBg from '../images/landing_bg.svg'
 import { VscFoldDown } from "react-icons/vsc"
+import clouds from '../images/cloud.svg'
 
 const target = new Date("September 2 2023 11:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00
 
@@ -39,8 +40,26 @@ function Landing() {
     window.scrollBy(0, window.innerHeight);
   }
 
+  const cloudData = [
+    { src: clouds, top: '30%', left: '-1%' },
+    { src: clouds, top: '60%', left: '10px' },
+    { src: clouds, top: '65%', left: '90%' },
+    { src: clouds, top: '40%', left: '95%' },
+  ];
+
   return (
     <div className="landing">
+      <div className="clouds-container">
+      {cloudData.map((cloud, index) => (
+        <img
+          key={index}
+          src={cloud.src}
+          alt="Clouds"
+          className="clouds"
+          style={{ top: cloud.top, left: cloud.left }}
+        />
+      ))}
+    </div>
       <img src={landingBg} className="landing-background"/>
       <div className="landing-countdown relative">
         <TimeSquare amt={timeUntil.d} unit={"DAYS"}/>
