@@ -1,7 +1,7 @@
 import * as React from 'react'
 import aboutTitle from '../images/about.svg';
 
-const About = ({content}) => {
+const About = () => {
   return (
     <div className="about-section">
       <a className="anchor" id="About"/>

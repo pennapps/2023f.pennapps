@@ -1,10 +1,10 @@
 import * as React from 'react'
 import ghosts from '../images/ghosts.svg'
 
-const Apply = ({content, id}) => {
+const Apply = () => {
   return (
-    <div key={id} className="section">
-      <a className="anchor" id={id}/>
+    <div className="section">
+      <a className="anchor"/>
       <div className="apply-box" id="punch-holes">
         <div className="apply-border">
           <div className="apply-header">
