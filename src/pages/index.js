@@ -16,9 +16,7 @@ const IndexPage = ({data}) => {
     return data.allMdx.nodes.filter(node => node.frontmatter.title === title)[0]
   }
 
-  const aboutContent = getSectionContent("About")
-  const applyContent = getSectionContent("Apply")
-  const logisticsContent = getSectionContent("Logistics")
+  //const logisticsContent = getSectionContent("Logistics")
   const faqContent = getSectionContent("FAQ")
 
   return (
@@ -26,8 +24,8 @@ const IndexPage = ({data}) => {
       <Landing/>
       <Navbar/>
       <Heading/>
-      <About content={aboutContent.rawBody} />
-      <Apply content={applyContent.body} id="Apply" />
+      <About/>
+      <Apply/>
       {/* <Logistics content={logisticsContent.body}/> */}
       <FAQ content={faqContent.rawBody} />
       <Footer/>
