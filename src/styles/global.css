@@ -324,6 +324,11 @@
     @apply text-left mt-10 mb-10 px-8 py-6 h-auto rounded-[1rem];
   }
 
+  .about-paragraph a, span{
+    @apply font-bold text-xl text-[#202044];
+    font-family: terminal_grotesque, sans-serif;
+  }
+
   .about-header{
     @apply rounded-[1rem] py-4 px-2 w-[100%] mb-5 text-[#FFD3C9] left-[25%];
   }
@@ -350,6 +355,14 @@
 
   #about-header-campus-ambassadors{
       @apply bg-[#FF7AAD]
+  }
+
+  #about-paragraph-diversity-fellows{
+    @apply bg-[#C1ECFF]
+  }
+
+  #about-header-diversity-fellows{
+      @apply bg-[#4bc8f9]
   }
 
   nav {
