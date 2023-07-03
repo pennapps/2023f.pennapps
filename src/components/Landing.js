@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import landingBg from '../images/landing-without-banner.svg'
+import landingLogo from '../images/pennapps-logo.svg'
 import { VscFoldDown } from "react-icons/vsc"
 import clouds from '../images/cloud.svg'
 import banner from '../images/banner.svg'
@@ -66,6 +67,7 @@ function Landing() {
       </div>
 
       <img src={landingBg} className="landing-background" />
+      <img src={landingLogo} className="landing-logo"/>
       <div className="landing-countdown relative">
         <TimeSquare amt={timeUntil.d} unit={"DAYS"} />
         <TimeSquare amt={timeUntil.h} unit={"HOURS"} />
@@ -75,6 +77,8 @@ function Landing() {
     </div>
   )
 }
+
+// navbar jumping issue has to do with landing-countdown
 
 function TimeSquare(props) {
   return (
