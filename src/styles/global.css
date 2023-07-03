@@ -148,25 +148,49 @@
     @apply text-center;
   }
 
-  .image-row{
+  .image-row {
     @apply relative mb-20 mt-20;
   }
 
-  .apply-content{
+  .apply-content {
     @apply top-[23%] left-[50%] absolute w-[20%];
+    transition: all 0.5s ease;
     z-index: 1;
   }
+
+  .image-row:hover .apply-content {
+    @apply top-[19%] left-[48%] absolute w-[23%];
+  }
+
+  .image-row:hover .apply-content .animated-button {
+    content: url("../images/apply_button_hovered.svg");
+  }
+
+  .image-row:hover .animated-coin{
+    content: url("../images/apply_bg_hovered.svg");
+  }
+
 
   #apply-bg{
     @apply relative w-[100%];
   }
 
   .heading h1{
-    @apply md:px-[5%] my-[-10px] lg:px-[4%] text-[#451DB9] text-[3.50em] leading-[1em] md:w-[11em] md:min-w-[10em] lg:max-w-[10em];
+    @apply md:px-[5%] my-[-10px] lg:px-[4%] text-[#451DB9] leading-[1em] md:w-[10em] md:min-w-[8em] lg:max-w-[10em];
+    @apply text-[2.175rem] px-[4%];
+    @apply sm:text-[2.5rem];
+    @apply md:text-[3.00em];
+    @apply lg:text-[3.50em];
   }
+  /*
+  */
 
   .heading h2{
-    @apply px-[2.25rem] my-[-10px] text-[#00639A] text-[2rem] leading-[2.4rem] md:w-[22.5em] lg:w-[30em] max-w-[30em];
+    @apply px-[2.25rem] my-[-10px] text-[#00639A] text-[2rem] md:w-[20em] lg:w-[29em] max-w-[30em];
+    @apply text-[1.25rem] leading-[1.rem];
+    @apply sm:text-[1.25rem] sm:leading-[1.5rem];
+    @apply md:text-[1.75rem] md:leading-[2rem];
+    @apply lg:text-[2rem] lg:leading-[2.4rem];
   }
 
   .header-box {
@@ -180,9 +204,11 @@
   .row{
     @apply flex justify-center;
   }
-
   .box{
-    @apply lg:w-[100%] md:w-[40%] sm:w-[20%];
+    @apply lg:w-[100%] md:w-[40%] sm:w-[40%] w-[5%];
+  }
+  .box-mid{
+    @apply lg:w-[100%] md:w-[40%] sm:w-[40%] w-[20%];
   }
 
   .dots{
@@ -202,9 +228,13 @@
   }
 
   .landing-background {
-    @apply flex w-[100%] h-[100%] md:h-[100%];
+    @apply flex md:w-[100%] lg:h-[100%] w-[0%];
   }
 
+  .landing-logo {
+    @apply w-[90%] md:w-[0%] mt-8;
+  }
+/*
   .landing-image {
     @apply w-full sm:w-5/6 md:max-h-[100%] text-center z-0;
   }
@@ -212,17 +242,21 @@
   .landing-image h2 {
     @apply md:hidden text-sm relative bottom-6 font-bold;
   }
+*/
 
   .landing-countdown {
-    @apply flex flex-row sm:space-x-3 space-x-2 z-[2] mt-[-25vw] w-[42%];
+    @apply flex flex-row md:mt-[-25vw] sm:space-x-2 space-x-2 z-[2] w-[70%] md:w-[47.75%];
+    @apply lg:mb-[15vw] md:mb-[14vw] mb-[10vw];
     justify-content: space-between;
+    transform: perspective(100vw) rotateX(50deg) scaleY(1.5);
+    transform-origin: top;
   }
 
   .landing-countdown-square {
-    @apply w-[25vw] h-[22vw] sm:w-[14.7vw] sm:h-[14vw];
-    @apply md:w-[9.975vw] md:h-[9.5vw] md:min-w-[5.25rem] md:min-h-[5rem];
-    @apply lg:max-h-[8vw] lg:max-w-[8vw] lg:mb-[15vw];
-    @apply flex flex-col items-center justify-center;
+    @apply w-[25vw] h-[15.25vw] sm:w-[14.7vw] sm:h-[15vw];
+    @apply md:w-[9.975vw] md:h-[8.25vw] md:min-w-[5.25rem] md:min-h-[3rem] md:shadow-none;
+    @apply lg:max-h-[8vw] lg:max-w-[10vw];
+    @apply flex flex-col items-center justify-center bg-slate-900 md:bg-transparent md:mt-[-1rem] mt-[-0.25rem] rounded-lg;
   }
 
   .landing-chevron {
@@ -234,15 +268,21 @@
   }
 
   .landing-ctdn-amt {
-    @apply font-bold text-[7vw] text-brightyellow lg:mb-5 md:mb-4;
+    @apply font-bold text-[10vw] md:text-[7.5vw] text-brightyellow drop-shadow-xl top-[15px];
+    position: relative;
     font-family: terminal_grotesque, sans-serif;
   }
 
   .landing-ctdn-unit {
+    @apply text-[3vw] md:text-[2vw] text-peach drop-shadow-xl md:bottom-[0.5em] bottom-[0.05em];
+    position: relative;
+    font-family: terminal_grotesque, sans-serif;
+  }
+  /*
     @apply text-[2vw] text-peach mb-5;
     font-family: terminal_grotesque, sans-serif;
-    margin-top: -50%;
-  }
+    margin-top: -50%; 
+  */
 
   .logistics-content {
     @apply relative text-navy px-[10%] md:px-[15%] lg:px-[25%] pt-12;
@@ -282,8 +322,23 @@
     @apply px-[10%] md:px-[15%] lg:px-[25%];
   }
 
+  .about-section-title {
+    @apply justify-center;
+    display: flex;
+  }
+
+  .about-section-title > img {
+    @apply flex-none overflow-hidden;
+    margin-right: 40px;
+  }
+
+
   #about-title{
-    @apply mx-auto w-[30%];
+    @apply mx-auto w-[30%] mr-10;
+  }
+
+  #about-title-dots {
+    @apply h-[50%];
   }
 
   .about-paragraph h2{
@@ -296,6 +351,11 @@
 
   .about-paragraph{
     @apply text-left mt-10 mb-10 px-8 py-6 h-auto rounded-[1rem];
+  }
+
+  .about-paragraph a, span{
+    @apply font-bold text-xl text-[#202044];
+    font-family: terminal_grotesque, sans-serif;
   }
 
   .about-header{
@@ -324,6 +384,14 @@
 
   #about-header-campus-ambassadors{
       @apply bg-[#FF7AAD]
+  }
+
+  #about-paragraph-diversity-fellows{
+    @apply bg-[#C1ECFF]
+  }
+
+  #about-header-diversity-fellows{
+      @apply bg-[#4bc8f9]
   }
 
   nav {
@@ -425,34 +493,41 @@
     @apply relative top-[-100px] invisible;
   }
 
-  #faq-title{
-    @apply mx-auto py-8 w-[11%];
-  }
-
   .faq-section {
     @apply pt-12;
     margin-bottom: -0.5rem;
   }
 
+  .faq-section-title {
+    @apply justify-center mb-5;
+    display: flex;
+  }
+
+  .faq-section-title > img {
+    @apply flex-none overflow-hidden;
+  }
+
+  #faq-title {
+    @apply mx-5 w-[12%];
+  }
+
   .faq-content{
-    @apply lg:px-[6%] mb-12;
+    @apply max-w-[70%] md:max-w-[50%];
   }
 
   .faq-lside{
-    @apply w-screen top-0;
-    background-image: url('../images/FAQBGLeft.svg');
+    @apply top-0 bg-right-top bg-contain md:w-[110vw] w-[0%];
+    background-image: url('../images/FAQBG_Left.svg');
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: auto;
-    height: 1000px;
+    background-size: 400px, 400px;
+    height: 900px;
   }
   .faq-rside{
-    @apply w-screen top-0;
-    background-image: url('../images/FAQBGRight.svg');
+    @apply top-0 bg-left-top bg-contain md:w-[110vw] w-[0%];
+    background-image: url('../images/FAQBG_Right.svg');
     background-repeat: no-repeat;
-    background-position: left top;
-    background-size: auto;
-    height: 1000px;
+    background-size: 400px, 400px;
+    height: 900px;
   }
 
   .faq-collapsible {
