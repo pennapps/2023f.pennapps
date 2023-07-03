@@ -248,7 +248,7 @@
     @apply flex flex-row md:mt-[-25vw] sm:space-x-2 space-x-2 z-[2] w-[70%] md:w-[47.75%];
     @apply lg:mb-[15vw] md:mb-[14vw] mb-[10vw];
     justify-content: space-between;
-    transform: perspective(1500px) rotateX(68deg) scaleY(2.6);
+    transform: perspective(100vw) rotateX(50deg) scaleY(1.5);
     transform-origin: top;
   }
 
