@@ -3,10 +3,11 @@ import Collapsible from 'react-collapsible';
 import ReactMarkdown from 'react-markdown'
 import {VscTriangleDown, VscTriangleUp} from "react-icons/vsc"
 import faqTitle from '../images/FAQs.svg'
+import faqDots from '../images/faq-title-dots-half.svg'
 import bgleft from '../images/FAQBGLeft.svg'
 import bgright from '../images/FAQBGRight.svg'
 import '../styles/index.css'
-import aboutTitle from "../images/about.svg";
+
 
 const FAQ = ({content}) => {
   const faqs = content.split("## ").slice(1);
@@ -55,8 +56,13 @@ const FAQ = ({content}) => {
   return (
     <div key="faqs" className="faq-section">
       <a className="anchor" id="FAQs"/>
-      <img id="faq-title" src={faqTitle}></img>
-      <div className="faq-box flex justify-center">
+      <div className="faq-section-title">
+        <img src={faqDots}></img>
+        <img id="faq-title" src={faqTitle}></img>
+        <img src={faqDots}></img>
+      </div>
+      
+      <div className="faq-box flex justify-between w-screen">
         <div className="faq-lside"></div>
         <div className="faq-content">
           {output}
