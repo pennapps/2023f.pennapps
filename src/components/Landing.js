@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import landingBg from '../images/landing-without-banner.svg'
+import landingBg from '../images/landing_bg.svg'
 import { VscFoldDown } from "react-icons/vsc"
 import clouds from '../images/cloud.svg'
 import banner from '../images/banner.svg'
@@ -61,9 +61,9 @@ function Landing() {
           />
         ))}
       </div>
-      <div className="sliding-banner">
+      {/* <div className="sliding-banner">
         <img src={banner} alt="Banner" className="banner-img" top="35%"  />
-      </div>
+      </div> */}
 
       <img src={landingBg} className="landing-background" />
       <div className="landing-countdown relative">
