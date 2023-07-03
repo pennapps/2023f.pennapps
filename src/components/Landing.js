@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import landingBg from '../images/landing_bg.svg'
 import landingLogo from '../images/pennapps-logo.svg'
 import { VscFoldDown } from "react-icons/vsc"
+import clouds from '../images/cloud.svg'
+import banner from '../images/banner.svg'
 
 const target = new Date("September 2 2023 11:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00
 
@@ -31,7 +33,7 @@ function Landing() {
       m = 0
       s = 0
     }
-    return {d, h, m, s}
+    return { d, h, m, s }
   }
 
   const timeUntil = getTimeUntil()
@@ -40,15 +42,37 @@ function Landing() {
     window.scrollBy(0, window.innerHeight);
   }
 
+  const cloudData = [
+    { src: clouds, top: '30%', left: '-1%' },
+    { src: clouds, top: '60%', left: '10px' },
+    { src: clouds, top: '65%', left: '90%' },
+    { src: clouds, top: '40%', left: '95%' },
+  ];
+
   return (
     <div className="landing">
-      <img src={landingBg} className="landing-background"/>
+      <div className="clouds-container">
+        {cloudData.map((cloud, index) => (
+          <img
+            key={index}
+            src={cloud.src}
+            alt="Clouds"
+            className="clouds"
+            style={{ top: cloud.top, left: cloud.left }}
+          />
+        ))}
+      </div>
+      {/* <div className="sliding-banner">
+        <img src={banner} alt="Banner" className="banner-img" top="35%"  />
+      </div> */}
+
+      <img src={landingBg} className="landing-background" />
       <img src={landingLogo} className="landing-logo"/>
-      <div className="landing-countdown relative"> 
-        <TimeSquare amt={timeUntil.d} unit={"DAYS"}/>
-        <TimeSquare amt={timeUntil.h} unit={"HOURS"}/>
-        <TimeSquare amt={timeUntil.m} unit={"MINUTES"}/>
-        <TimeSquare amt={timeUntil.s} unit={"SECONDS"}/>
+      <div className="landing-countdown relative">
+        <TimeSquare amt={timeUntil.d} unit={"DAYS"} />
+        <TimeSquare amt={timeUntil.h} unit={"HOURS"} />
+        <TimeSquare amt={timeUntil.m} unit={"MINUTES"} />
+        <TimeSquare amt={timeUntil.s} unit={"SECONDS"} />
       </div>
     </div>
   )
