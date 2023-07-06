@@ -43,32 +43,33 @@ function Landing() {
   }
 
   const cloudData = [
-    { src: clouds, top: '30%', left: '-1%' },
-    { src: clouds, top: '60%', left: '10px' },
-    { src: clouds, top: '65%', left: '90%' },
-    { src: clouds, top: '40%', left: '95%' },
+    { src: clouds, top: '8vw', left: '-2vw', width: "14%"},
+    { src: clouds, top: '23vw', left: '1vw', width: "12%" },
+    { src: clouds, top: '0vw', left: '93vw', width: "10%"},
+    { src: clouds, top: '16vw', left: '88vw', width: "12%"},
   ];
 
   return (
     <div className="landing">
-      <div className="clouds-container">
+      
+      <div className="clouds-container overflow-hidden">
         {cloudData.map((cloud, index) => (
           <img
             key={index}
             src={cloud.src}
             alt="Clouds"
             className="clouds"
-            style={{ top: cloud.top, left: cloud.left }}
+            style={{ top: cloud.top, left: cloud.left, width: cloud.width }}
           />
         ))}
       </div>
+          
       {/* <div className="sliding-banner">
         <img src={banner} alt="Banner" className="banner-img" top="35%"  />
       </div> */}
-
       <img src={landingBg} className="landing-background" />
       <img src={landingLogo} className="landing-logo"/>
-      <div className="landing-countdown relative">
+      <div className="landing-countdown relative z-10">
         <TimeSquare amt={timeUntil.d} unit={"DAYS"} />
         <TimeSquare amt={timeUntil.h} unit={"HOURS"} />
         <TimeSquare amt={timeUntil.m} unit={"MINUTES"} />

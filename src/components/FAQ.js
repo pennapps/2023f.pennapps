@@ -56,7 +56,7 @@ const FAQ = ({content}) => {
   return (
     <div key="faqs" className="faq-section">
       <a className="anchor" id="FAQs"/>
-      <div className="faq-section-title">
+      <div className="faq-section-title overflow-hidden">
         <img src={faqDots}></img>
         <img id="faq-title" src={faqTitle}></img>
         <img src={faqDots}></img>
