@@ -267,10 +267,13 @@
     @apply md:hidden text-sm relative bottom-6 font-bold;
   }
 */
+  .info-text{
+    transform: perspective(100vw) rotateX(50deg) scaleY(1.5);
+  }
 
   .landing-countdown {
-    @apply flex flex-row md:mt-[-25vw] sm:space-x-2 space-x-2 z-[2] w-[70%] md:w-[47.75%];
-    @apply lg:mb-[15vw] md:mb-[14vw] mb-[10vw];
+    @apply flex flex-row mt-[-2vw] md:mt-[-26.5vw] sm:space-x-2 space-x-2 z-[2] w-[70%] md:w-[47.75%];
+    @apply lg:mb-[17vw] md:mb-[16vw] sm:mb-[14vw] mb-[12vw];
     justify-content: space-between;
     transform: perspective(100vw) rotateX(50deg) scaleY(1.5);
     transform-origin: top;

@@ -4,8 +4,6 @@ import ReactMarkdown from 'react-markdown'
 import {VscTriangleDown, VscTriangleUp} from "react-icons/vsc"
 import faqTitle from '../images/FAQs.svg'
 import faqDots from '../images/faq-title-dots-half.svg'
-import bgleft from '../images/FAQBGLeft.svg'
-import bgright from '../images/FAQBGRight.svg'
 import '../styles/index.css'
 
 

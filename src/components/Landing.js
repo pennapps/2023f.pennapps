@@ -5,7 +5,7 @@ import { VscFoldDown } from "react-icons/vsc"
 import clouds from '../images/cloud.svg'
 import banner from '../images/banner.svg'
 
-const target = new Date("September 2 2023 11:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00
+const target = new Date("September 8 2023 0:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00
 
 function Landing() {
   const [mSecUntil, setMSecUntil] = useState(target - Date.now())
@@ -74,6 +74,9 @@ function Landing() {
         <TimeSquare amt={timeUntil.h} unit={"HOURS"} />
         <TimeSquare amt={timeUntil.m} unit={"MINUTES"} />
         <TimeSquare amt={timeUntil.s} unit={"SECONDS"} />
+      </div>
+      <div className="info-text absolute z-10 text-[4vw] top-[67vw] md:top-[46vw] md:text-[2.5vw]">
+        <p className="text-brightyellow md:text-[#810FFF] drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.4)]">September 8-10, 2023</p>
       </div>
     </div>
   )
