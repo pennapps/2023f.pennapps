@@ -324,8 +324,7 @@ h1 span {
 }
 
 .clouds {
-    position: absolute;
-    width: auto; 
+    position: relative;
     height: auto; 
     z-index: 1;
     animation: cloudMovement 2s ease-in-out infinite alternate;

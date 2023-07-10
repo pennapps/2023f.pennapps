@@ -4,8 +4,6 @@ import ReactMarkdown from 'react-markdown'
 import {VscTriangleDown, VscTriangleUp} from "react-icons/vsc"
 import faqTitle from '../images/FAQs.svg'
 import faqDots from '../images/faq-title-dots-half.svg'
-import bgleft from '../images/FAQBGLeft.svg'
-import bgright from '../images/FAQBGRight.svg'
 import '../styles/index.css'
 
 
@@ -56,7 +54,7 @@ const FAQ = ({content}) => {
   return (
     <div key="faqs" className="faq-section">
       <a className="anchor" id="FAQs"/>
-      <div className="faq-section-title">
+      <div className="faq-section-title overflow-hidden">
         <img src={faqDots}></img>
         <img id="faq-title" src={faqTitle}></img>
         <img src={faqDots}></img>

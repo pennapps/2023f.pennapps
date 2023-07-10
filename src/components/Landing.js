@@ -5,7 +5,7 @@ import { VscFoldDown } from "react-icons/vsc"
 import clouds from '../images/cloud.svg'
 import banner from '../images/banner.svg'
 
-const target = new Date("September 2 2023 11:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00
+const target = new Date("September 8 2023 18:00:00 EST")
 
 function Landing() {
   const [mSecUntil, setMSecUntil] = useState(target - Date.now())
@@ -43,36 +43,40 @@ function Landing() {
   }
 
   const cloudData = [
-    { src: clouds, top: '30%', left: '-1%' },
-    { src: clouds, top: '60%', left: '10px' },
-    { src: clouds, top: '65%', left: '90%' },
-    { src: clouds, top: '40%', left: '95%' },
+    { src: clouds, top: '8vw', left: '-2vw', width: "14%"},
+    { src: clouds, top: '23vw', left: '1vw', width: "12%" },
+    { src: clouds, top: '0vw', left: '93vw', width: "10%"},
+    { src: clouds, top: '16vw', left: '88vw', width: "12%"},
   ];
 
   return (
     <div className="landing">
-      <div className="clouds-container">
+
+      <div className="clouds-container overflow-hidden">
         {cloudData.map((cloud, index) => (
           <img
             key={index}
             src={cloud.src}
             alt="Clouds"
             className="clouds"
-            style={{ top: cloud.top, left: cloud.left }}
+            style={{ top: cloud.top, left: cloud.left, width: cloud.width }}
           />
         ))}
       </div>
+
       {/* <div className="sliding-banner">
         <img src={banner} alt="Banner" className="banner-img" top="35%"  />
       </div> */}
-
       <img src={landingBg} className="landing-background" />
       <img src={landingLogo} className="landing-logo"/>
-      <div className="landing-countdown relative">
+      <div className="landing-countdown relative z-10">
         <TimeSquare amt={timeUntil.d} unit={"DAYS"} />
         <TimeSquare amt={timeUntil.h} unit={"HOURS"} />
         <TimeSquare amt={timeUntil.m} unit={"MINUTES"} />
         <TimeSquare amt={timeUntil.s} unit={"SECONDS"} />
+      </div>
+      <div className="info-text absolute z-10 text-[4vw] top-[67vw] md:top-[46vw] md:text-[2.5vw]">
+        <p className="text-brightyellow md:text-[#810FFF] drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.4)]">September 8-10, 2023</p>
       </div>
     </div>
   )
