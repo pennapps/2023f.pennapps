@@ -5,7 +5,7 @@ import { VscFoldDown } from "react-icons/vsc"
 import clouds from '../images/cloud.svg'
 import banner from '../images/banner.svg'
 
-const target = new Date("September 8 2023 0:00:00 EST") //1 hour difference bc of daylight savings so 11:00 => 12:00
+const target = new Date("September 8 2023 18:00:00 EST")
 
 function Landing() {
   const [mSecUntil, setMSecUntil] = useState(target - Date.now())
@@ -51,7 +51,7 @@ function Landing() {
 
   return (
     <div className="landing">
-      
+
       <div className="clouds-container overflow-hidden">
         {cloudData.map((cloud, index) => (
           <img
@@ -63,7 +63,7 @@ function Landing() {
           />
         ))}
       </div>
-          
+
       {/* <div className="sliding-banner">
         <img src={banner} alt="Banner" className="banner-img" top="35%"  />
       </div> */}
