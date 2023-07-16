@@ -354,22 +354,20 @@
   }
 
   .about-section-title {
-    @apply justify-center;
+    @apply justify-center items-center;
     display: flex;
   }
 
   .about-section-title > img {
     @apply flex-none overflow-hidden;
-    margin-right: 40px;
   }
 
-
   #about-title{
-    @apply mx-auto w-[30%] mr-10;
+    @apply w-[30%] mx-[2em];
   }
 
   #about-title-dots {
-    @apply h-[50%];
+    @apply w-[27%];
   }
 
   .about-paragraph h2{
