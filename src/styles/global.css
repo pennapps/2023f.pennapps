@@ -155,8 +155,28 @@
   .apply-content {
     @apply top-[23%] left-[50%] absolute w-[20%];
     transition: all 0.5s ease;
+    z-index: 2;
+  }
+
+  .apply-coin{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .animated-coin {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1;
   }
+
+  .animated-coin-hover{
+    position: absolute;
+    width: 100%;
+  }
+
   /*
   .image-row:hover .apply-content {
     @apply top-[19%] left-[48%] absolute w-[23%];
@@ -180,7 +200,7 @@
   }
 
   .image-row:hover .animated-coin{
-    content: url("../images/apply_bg_hovered.svg");
+    z-index: 0;
   }
 
   div.image-row {
@@ -194,10 +214,6 @@
     I stole the above code from stackoverflow and I don't know how it works, but it fixes the issue of the transition happening when
     you hover over the image-row div.
   */
-
-  #apply-bg{
-    @apply relative w-[100%];
-  }
 
   .heading h1{
     @apply md:px-[5%] my-[-10px] lg:px-[4%] text-[#451DB9] leading-[1em] md:w-[10em] md:min-w-[8em] lg:max-w-[10em];
