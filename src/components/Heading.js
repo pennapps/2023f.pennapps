@@ -1,6 +1,7 @@
 import React from 'react'
 import apply_button from '../images/apply_button.svg'
 import apply_bg from '../images/apply_bg.svg'
+import apply_bg_hover from '../images/apply_bg_hovered.svg'
 
 /*
 .dots{
@@ -46,7 +47,10 @@ function Heading() {
         <div className="apply-content">
           <a href="https://apply.pennapps.com/" target="_blank"><img className="animated-button" src={apply_button}></img></a>
         </div>
-        <img className="animated-coin" src={apply_bg} id="apply-bg"></img>
+        <div className="apply-coin">
+          <img className="animated-coin" src={apply_bg}></img>
+          <img className="animated-coin-hover relative" src={apply_bg_hover}></img>
+        </div>
       </div>
     </div>
   )
