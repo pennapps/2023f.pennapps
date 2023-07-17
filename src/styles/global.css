@@ -76,7 +76,7 @@
          url('../font/term_gro/terminal-grotesque-webfont.woff') format('woff'),
          url('../font/term_gro/terminal-grotesque-webfont.ttf') format('truetype'),
          url('../font/term_gro/terminal-grotesque-webfont.svg#terminal_grotesqueregular') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -406,8 +406,9 @@
   .apply-header{
     @apply bg-pacificblue text-center px-2 py-1 rounded-t-[3.175em];
   }
-  .apply-header h1{
-    @apply leading-[3rem] text-[#10104A] mt-4;
+  .apply-header h2{
+    @apply leading-[3rem] text-[#10104A] mt-4 text-[8vw];
+    line-height: 1.2;
   }
 
   .apply-text{

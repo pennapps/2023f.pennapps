@@ -8,7 +8,7 @@ const Apply = ({content, id}) => {
       <div className="apply-box" id="punch-holes">
         <div className="apply-border">
           <div className="apply-header">
-            <h1>The Application Process</h1>
+            <h2>The Application Process</h2>
           </div>
           <div className="apply-text">
             <p>Each year, PennApps receives thousands of qualified applications, but unfortunately,
