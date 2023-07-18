@@ -59,14 +59,14 @@ const About = ({content}) => {
         <div className="about-header" id="about-header-diversity-fellows">
           <h2>Diversity Fellows</h2>
         </div>
-        <p> For hackers that are low-income and/or hail from historically underrepresented backgrounds, 
-          the Diversity Fellows program intends to provide full or partial reimbursement for traveling to and attending PennApps! 
-          PennApps Diversity Fellows will also have the chance to attend a series of skill-building workshops in the weeks 
-          leading up to PennApps XXIV. 
+        <p> For hackers that are low-income and/or hail from historically underrepresented backgrounds,
+          the Diversity Fellows program intends to provide full or partial reimbursement for traveling to and attending PennApps!
+          PennApps Diversity Fellows will also have the chance to attend a series of skill-building workshops in the weeks
+          leading up to PennApps XXIV.
         </p>
         <span>Apply to become a Diversity Fellow </span>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWCWk6Ahr1Kdwq0Swat1d27r7MWPPsme2Us8p6s-6Nyx_s-A/viewform">
-          here!</a><span> Applications are due by Sunday, July 16th, at 11:59 PM ET.</span>
+          here!</a><span> Applications are due by Wednesday, July 19th, at 11:59 PM ET.</span>
       </div>
       <img id="about-dots-bottom" src={aboutDotsBottom}></img>
     </div>
