@@ -1,7 +1,7 @@
 import * as React from 'react'
 import ghosts from '../images/ghosts.svg'
 
-const Apply = ({content, id}) => {
+const Apply = ({id}) => {
   return (
     <div key={id} className="section">
       <a className="anchor" id={id}/>

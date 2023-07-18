@@ -2,6 +2,7 @@ import React from 'react'
 import apply_button from '../images/apply_button.svg'
 import apply_bg from '../images/apply_bg.svg'
 import apply_bg_hover from '../images/apply_bg_hovered.svg'
+import { COLOR_PALETTE } from '../constants'
 
 /*
 .dots{
@@ -16,31 +17,31 @@ function Heading() {
 
   return (
     <div className="heading-parent">
-      <div className="row bg-[#31398C]">
-        <div className="box bg-[#6D79FF] border-[#5562E9] border-r-[15px] border-b-[15px] w-screen md:h-[10em] h-[6.5em] rounded-tl-[3.5em]"></div>
-        <div className="box bg-[#5562E9] border-[#6D79FF] border-l-[15px] border-b-[15px] w-screen md:h-[10em] h-[6.5em] rounded-tr-[3.5em]"></div>
+      <div className={`row bg-[${COLOR_PALETTE.DARK_BLUE}]`}>
+        <div className={`box bg-[${COLOR_PALETTE.SLATE_BLUE}] border-[${COLOR_PALETTE.DEEP_BLUE}] border-r-[15px] border-b-[15px] w-screen md:h-[10em] h-[6.5em] rounded-tl-[3.5em]`}></div>
+        <div className={`box bg-[${COLOR_PALETTE.DEEP_BLUE}] border-[${COLOR_PALETTE.SLATE_BLUE}] border-l-[15px] border-b-[15px] w-screen md:h-[10em] h-[6.5em] rounded-tr-[3.5em]`}></div>
       </div>
       <div className="row">
-        <div className="box-mid bg-[#5562E9] border-[#6D79FF] border-r-[15px] border-y-[15px] "></div>
+        <div className={`box-mid bg-[${COLOR_PALETTE.DEEP_BLUE}] border-[${COLOR_PALETTE.SLATE_BLUE}] border-r-[15px] border-y-[15px]`}></div>
         <div className="heading">
           <div className="header-box">
-            <RowDot color={"#9773FF"}/>
+            <RowDot color={COLOR_PALETTE.INDIGO}/>
             <h1>Game On! Applications are now open.</h1>
-            <RowDot color={"#9773FF"}/>
+            <RowDot color={COLOR_PALETTE.INDIGO}/>
           </div>
         </div>
-        <div className="box-mid bg-[#6D79FF] border-[#5562E9] border-l-[15px] border-y-[15px]"></div>
+        <div className={`box-mid bg-[${COLOR_PALETTE.SLATE_BLUE}] border-[${COLOR_PALETTE.DEEP_BLUE}] border-l-[15px] border-y-[15px]`}></div>
       </div>
       <div className="row">
-        <div className="box bg-[#6D79FF] border-[#5562E9] border-r-[15px] border-y-[15px]"></div>
+        <div className={`box bg-[${COLOR_PALETTE.SLATE_BLUE}] border-[${COLOR_PALETTE.DEEP_BLUE}] border-r-[15px] border-y-[15px]`}></div>
         <div className="heading">
           <div className="desc-box">
-            <RowDot color={"#00B7FF"}/>
+            <RowDot color={COLOR_PALETTE.SKY_BLUE}/>
             <h2>Hosted at the nation's first university, PennApps is the original college hackathon. Come join us to learn something new, build an app, or start a company. Let’s continue to make history together.</h2>
-            <RowDot color={"#00B7FF"}/>
+            <RowDot color={COLOR_PALETTE.SKY_BLUE}/>
           </div>
         </div>
-        <div className="box bg-[#5562E9] border-[#6D79FF] border-l-[15px] border-y-[15px]"></div>
+        <div className={`box bg-[${COLOR_PALETTE.DEEP_BLUE}] border-[${COLOR_PALETTE.SLATE_BLUE}] border-l-[15px] border-y-[15px]`}></div>
       </div>
 
       <div className="image-row">

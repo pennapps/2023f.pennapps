@@ -1,0 +1,7 @@
+export const COLOR_PALETTE = {
+  DARK_BLUE: "#31398C",
+  DEEP_BLUE: "#5562E9",
+  SLATE_BLUE: "#6D79FF",
+  INDIGO: "#9773FF",
+  SKY_BLUE: "#00B7FF",
+}

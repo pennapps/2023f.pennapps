@@ -5,7 +5,7 @@ import pacmanLeft from '../images/about-pacman-left.svg';
 import pacmanRight from '../images/about-pacman-right.svg';
 import aboutDotsBottom from '../images/about-dots-bottom.svg';
 
-const About = ({content}) => {
+const About = () => {
   return (
     <div className="about-section">
       <a className="anchor" id="About"/>
@@ -51,9 +51,9 @@ const About = ({content}) => {
           ambassador for PennApps. What this entails is spreading the word about PennApps at your
           local school, college or university. Campus ambassadors are an important part of the
           PennApps community and receive custom swag and perks at and before the event.</p>
-        <span>Apply to be a Campus Ambassador </span>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenVr3R12cKmBTLd8dxmAdtG35zk7GNbNhYwKPQ2ut7aZFKOg/viewform">
-          here!</a><span> Applications are due by Friday, June 23rd, at 11:59 PM ET.</span>
+        {/* <span>Apply to be a Campus Ambassador </span> */}
+        {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSenVr3R12cKmBTLd8dxmAdtG35zk7GNbNhYwKPQ2ut7aZFKOg/viewform">
+          here!</a><span> Applications are due by Friday, June 23rd, at 11:59 PM ET.</span> */}
       </div>
       <div className="about-paragraph" id="about-paragraph-diversity-fellows">
         <div className="about-header" id="about-header-diversity-fellows">
@@ -66,7 +66,7 @@ const About = ({content}) => {
         </p>
         <span>Apply to become a Diversity Fellow </span>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWCWk6Ahr1Kdwq0Swat1d27r7MWPPsme2Us8p6s-6Nyx_s-A/viewform">
-          here!</a><span> Applications are due by Sunday, July 16th, at 11:59 PM ET.</span>
+          here!</a><span> Applications are due by Wednesday, July 19th, at 11:59 PM ET.</span>
       </div>
       <img id="about-dots-bottom" src={aboutDotsBottom}></img>
     </div>
