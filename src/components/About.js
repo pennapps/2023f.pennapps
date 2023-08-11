@@ -55,6 +55,7 @@ const About = ({content}) => {
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSenVr3R12cKmBTLd8dxmAdtG35zk7GNbNhYwKPQ2ut7aZFKOg/viewform">
           here!</a><span> Applications are due by Friday, June 23rd, at 11:59 PM ET.</span>
       </div>
+      <img id="pacmanLeft" src={pacmanLeft}></img>
       <div className="about-paragraph" id="about-paragraph-diversity-fellows">
         <div className="about-header" id="about-header-diversity-fellows">
           <h2>Diversity Fellows</h2>
