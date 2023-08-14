@@ -409,6 +409,8 @@
   .apply-header h2{
     @apply leading-[3rem] text-[#10104A] mt-4 text-[8vw];
     line-height: 1.2;
+    /* For max font size:  */
+    font-size: clamp(2rem, 8vw, 4rem); 
   }
 
   .apply-text{
