@@ -29,7 +29,7 @@ const Apply = ({content, id}) => {
         </div>
       </div>
       <div id="ghosts">
-        <img src={ghosts}></img>
+        <img className="w-[100%]" src={ghosts}></img>
       </div>
     </div>
   )
