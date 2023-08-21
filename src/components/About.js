@@ -26,7 +26,9 @@ const About = ({content}) => {
           aspect of a hackathon are the community it generates and skills that inexperienced hackers
           walk away with.</p>
       </div>
-      <img id="pacmanLeft" src={pacmanLeft}></img>
+      <div>
+        <img className="w-[100%]" src={pacmanLeft}></img>
+      </div>
       <div className="about-paragraph" id="about-paragraph-pennapps-difference">
         <div className="about-header" id="about-header-pennapps-difference">
           <h2>The PennApps Difference</h2>
@@ -42,7 +44,9 @@ const About = ({content}) => {
           more learning opportunities and workshops throughout the weekend.
         </p>
       </div>
-      <img id="pacmanRight" src={pacmanRight}></img>
+      <div>
+        <img className="w-[100%]" src={pacmanRight}></img>
+      </div>
       <div className="about-paragraph" id="about-paragraph-campus-ambassadors">
         <div className="about-header" id="about-header-campus-ambassadors">
           <h2>Campus Ambassadors</h2>
@@ -54,6 +58,9 @@ const About = ({content}) => {
         <span>Apply to be a Campus Ambassador </span>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSenVr3R12cKmBTLd8dxmAdtG35zk7GNbNhYwKPQ2ut7aZFKOg/viewform">
           here!</a><span> Applications are due by Friday, June 23rd, at 11:59 PM ET.</span>
+      </div>
+      <div>
+        <img className="w-[100%]" src={pacmanLeft}></img>
       </div>
       <div className="about-paragraph" id="about-paragraph-diversity-fellows">
         <div className="about-header" id="about-header-diversity-fellows">
@@ -68,7 +75,9 @@ const About = ({content}) => {
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWCWk6Ahr1Kdwq0Swat1d27r7MWPPsme2Us8p6s-6Nyx_s-A/viewform">
           here!</a><span> Applications are due by Wednesday, July 19th, at 11:59 PM ET.</span>
       </div>
-      <img id="about-dots-bottom" src={aboutDotsBottom}></img>
+      <div>
+        <img className="w-[100%]" src={aboutDotsBottom}></img>
+      </div>
     </div>
   )
 };
