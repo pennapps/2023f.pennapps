@@ -60,7 +60,7 @@ const About = ({content}) => {
           here!</a><span> Applications are due by Friday, June 23rd, at 11:59 PM ET.</span>
       </div>
       <div>
-        <img className="w-[100%]" src={aboutDotsBottom}></img>
+        <img className="w-[100%]" src={pacmanLeft}></img>
       </div>
       <div className="about-paragraph" id="about-paragraph-diversity-fellows">
         <div className="about-header" id="about-header-diversity-fellows">
