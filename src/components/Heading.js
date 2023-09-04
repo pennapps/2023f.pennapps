@@ -25,7 +25,7 @@ function Heading() {
         <div className="heading">
           <div className="header-box">
             <RowDot color={"#9773FF"}/>
-            <h1>Game On! Applications are now open.</h1>
+            <h1>Game On! Applications are now closed, see you soon!</h1>
             <RowDot color={"#9773FF"}/>
           </div>
         </div>
