@@ -30,6 +30,7 @@ const IndexPage = ({data}) => {
       <Apply content={applyContent.body} id="Apply" />
       <Logistics content={logisticsContent.body}/>
       <FAQ content={faqContent.rawBody} />
+      <Sponsors />
       <Footer/>
     </main>
   )

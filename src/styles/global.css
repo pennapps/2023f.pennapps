@@ -618,6 +618,14 @@
     text-align: center;
   }
 
+  #sponsor-title {
+    @apply mx-5 w-[55%];
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+
+  }
+
   .sponsor-logo-container {
     display: flex;
     flex-wrap: wrap;
@@ -625,8 +633,24 @@
     gap: 20px;
   }
 
-  #meta {
-    width: 30%
+  #SIG {
+    width: 50%;
+  }
+
+  #Bloomberg, #Five-Rings, #Viam {
+    width: 30%;
+  }
+
+  #Capital-One, #USB-Club, #Twilio, #Jane-Street {
+    width: 25%;
+  }
+
+  #SCM {
+    width: 15%;
+  }
+
+  #Balsamiq, #Walfram, #Axure, #Verbwire {
+    width: 15%;
   }
 
   .footer {

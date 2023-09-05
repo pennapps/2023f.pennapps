@@ -47,7 +47,7 @@ const About = ({content}) => {
       <div>
         <img className="w-[100%]" src={pacmanRight}></img>
       </div>
-      <div className="about-paragraph" id="about-paragraph-campus-ambassadors">
+      {/* <div className="about-paragraph" id="about-paragraph-campus-ambassadors">
         <div className="about-header" id="about-header-campus-ambassadors">
           <h2>Campus Ambassadors</h2>
         </div>
@@ -58,11 +58,11 @@ const About = ({content}) => {
         <span>Apply to be a Campus Ambassador </span>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSenVr3R12cKmBTLd8dxmAdtG35zk7GNbNhYwKPQ2ut7aZFKOg/viewform">
           here!</a><span> Applications are due by Friday, June 23rd, at 11:59 PM ET.</span>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <img className="w-[100%]" src={pacmanLeft}></img>
-      </div>
-      <div className="about-paragraph" id="about-paragraph-diversity-fellows">
+      </div> */}
+      {/* <div className="about-paragraph" id="about-paragraph-diversity-fellows">
         <div className="about-header" id="about-header-diversity-fellows">
           <h2>Diversity Fellows</h2>
         </div>
@@ -74,10 +74,10 @@ const About = ({content}) => {
         <span>Apply to become a Diversity Fellow </span>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWCWk6Ahr1Kdwq0Swat1d27r7MWPPsme2Us8p6s-6Nyx_s-A/viewform">
           here!</a><span> Applications are due by Wednesday, July 19th, at 11:59 PM ET.</span>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <img className="w-[100%]" src={aboutDotsBottom}></img>
-      </div>
+      </div> */}
     </div>
   )
 };

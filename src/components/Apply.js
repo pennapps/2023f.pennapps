@@ -5,7 +5,7 @@ const Apply = ({content, id}) => {
   return (
     <div key={id} className="section">
       <a className="anchor" id={id}/>
-      <div className="apply-box" id="punch-holes">
+      {/* <div className="apply-box" id="punch-holes">
         <div className="apply-border">
           <div className="apply-header">
             <h2>The Application Process</h2>
@@ -27,7 +27,7 @@ const Apply = ({content, id}) => {
             <p></p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div id="ghosts">
         <img className="w-[100%]" src={ghosts}></img>
       </div>
