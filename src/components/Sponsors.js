@@ -21,7 +21,7 @@ import verbwire from '../images/sponsors_logo/Verbwire.svg';
 function Sponsors() {
   return (
     <div className="section">
-      <a className="anchor" id="sponsors"/>
+      <a className="anchor" id="Sponsors"/>
       <img id="sponsor-title" src={sponsorTitle}></img>
       <div className="sponsor-logo-container">
         <div id="SIG">

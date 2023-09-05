@@ -75,7 +75,7 @@ function Landing() {
         <TimeSquare amt={timeUntil.m} unit={"MINUTES"} />
         <TimeSquare amt={timeUntil.s} unit={"SECONDS"} />
       </div>
-      <div className="info-text absolute z-10 text-[4vw] top-[67vw] md:top-[46vw] md:text-[2.5vw]">
+      <div className="info-text absolute z-10 text-[4vw] top-[67vw] md:top-[42vw] md:text-[2.5vw]">
         <p className="text-brightyellow md:text-[#810FFF] drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.4)]">September 8-10, 2023</p>
       </div>
     </div>

@@ -5,7 +5,7 @@ const Apply = ({content, id}) => {
   return (
     <div key={id} className="section">
       <a className="anchor" id={id}/>
-      {/* <div className="apply-box" id="punch-holes">
+      {<div className="apply-box" id="punch-holes">
         <div className="apply-border">
           <div className="apply-header">
             <h2>The Application Process</h2>
@@ -21,13 +21,18 @@ const Apply = ({content, id}) => {
               new.</p>
             <p>While we cannot accept everyone, we strive to build a diverse community of amazing
               hackers. Simply showcase your work, share why you want to attend PennApps, and we will
-              do our best to bring you here! Penn students may register with their Penn emails when
-              applying. Apply now at <a href="https://apply.pennapps.com/">apply.pennapps.com</a>!
+              do our best to bring you here! Penn students should register with their Penn emails when
+              applying. Applications are now closed, and you may access your application
+              at <a href="https://apply.pennapps.com/">apply.pennapps.com</a>.
+            </p>
+            <p>If you are a Penn student who missed the application deadline but still would like to
+              join, please email us at <a href="mailto:contact@pennapps.com">contact@pennapps.com</a> with
+              your Penn email.
             </p>
             <p></p>
           </div>
         </div>
-      </div> */}
+      </div>}
       <div id="ghosts">
         <img className="w-[100%]" src={ghosts}></img>
       </div>

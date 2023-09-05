@@ -3,9 +3,7 @@ import logo from '../images/PennAppsLogo.png'
 import {FaBars} from "@react-icons/all-files/fa/FaBars";
 import mlhBadgeSrc from '../images/mlh-trust-badge-blue-2024.svg'
 
-
-//const links = ['about', 'apply', 'logistics', 'faqs', 'sponsors']
-const links = ['About', 'Apply', 'FAQs']
+const links = ['About', 'Apply', 'Logistics', 'FAQs', 'Sponsors']
 
 function Navbar() {
   const mlhHref = "https://mlh.io/seasons/2023/events";
