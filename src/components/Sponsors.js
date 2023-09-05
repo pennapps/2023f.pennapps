@@ -19,42 +19,6 @@ import mack from '../images/sponsors_logo/Mack-Institute.png';
 import nordvpn from '../images/sponsors_logo/NordVPN.png';
 import directai from '../images/sponsors_logo/DirectAI.png';
 
-function tierToRank(a) {
-  switch (a.tier) {
-    case "Title":
-      return 0;
-    case "Giga":
-      return 1;
-    case "Mega":
-      return 2;
-    case "Other":
-      return 3;
-    case "Prize":
-      return 4;
-    default:
-      return 5;
-  }
-}
-
-function tierToCol(a) {
-  const rank = tierToRank(a);
-
-  switch (rank) {
-    case 0:
-      return 12;
-    case 1:
-      return 6;
-    case 2:
-      return 4;
-    case 3:
-      return 3;
-    case 4:
-      return 2;
-    default:
-      return 1;
-  }
-}
-
 const SPONSORS = {
   "Title": [
     {
