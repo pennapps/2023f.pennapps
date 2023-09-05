@@ -360,21 +360,17 @@
   }
 
   .schedule {
-    @apply absolute bg-[#C1ECFF] w-full flex text-left flex-col sm:mt-16 mt-20;
-    @apply text-[#202044];
-    padding: 2%;
+    @apply absolute bg-[#EAECFF] w-full flex text-left flex-col sm:mt-16 mt-20;
+    @apply text-[#31398C];
+    padding: 3%;
   }
 
   .schedule h1 {
-    @apply text-4xl text-[#202044];
+    @apply text-4xl text-[#31398C];
   }
 
   .schedule h2 {
-    @apply text-[#202044];
-  }
-
-  .schedule hr {
-    @apply bg-yellow;
+    @apply text-[#31398C];
   }
 
   .about-section {
