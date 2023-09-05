@@ -10,6 +10,12 @@ import usbClubs from '../images/sponsors_logo/USB-Club.png';
 import twilio from '../images/sponsors_logo/Twilio.png';
 import janeStreet from '../images/sponsors_logo/Jane-Street.png';
 import scm from '../images/sponsors_logo/SCM.png';
+import balsamiq from '../images/sponsors_logo/Balsamiq.png';
+import axure from '../images/sponsors_logo/Axure.png';
+import wolfram from '../images/sponsors_logo/Wolfram-Language.png';
+import verbwire from '../images/sponsors_logo/Verbwire.svg';
+
+
 
 
 function Sponsors() {
@@ -61,6 +67,26 @@ function Sponsors() {
         <div id="SCM">
           <a href=" https://www.scm-lp.com/">
             <img src={scm} alt="Stevens Capital Management"/>
+          </a>
+        </div>
+        <div id="Balsamiq">
+          <a href=" https://balsamiq.com/">
+            <img src={balsamiq} alt="Balsamiq"/>
+          </a>
+        </div>
+        <div id="Axure">
+          <a href=" https://www.axure.com/">
+            <img src={axure} alt="Axure"/>
+          </a>
+        </div>
+        <div id="Walfram">
+          <a href="">
+            <img src={wolfram} alt="Walfram Language"/>
+          </a>
+        </div>
+        <div id="Verbwire">
+          <a href="https://www.verbwire.com/">
+            <img src={verbwire} alt="Verbwire"/>
           </a>
         </div>
       </div>

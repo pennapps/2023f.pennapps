@@ -609,7 +609,7 @@
     @apply mx-5 w-[55%];
     text-align: center;
     margin: auto;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 
   }
 
@@ -633,6 +633,10 @@
   }
 
   #SCM {
+    width: 15%;
+  }
+
+  #Balsamiq, #Walfram, #Axure, #Verbwire {
     width: 15%;
   }
 
