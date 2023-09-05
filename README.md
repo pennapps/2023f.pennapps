@@ -43,9 +43,9 @@ This is the iteration site for PennApps XXIV – our arcade-themed hackathon com
 
 Thank you to our hardworking dev team for their work on this website!
 
-* [@gumillie222](https://github.com/gumillie222)
+* [@fyy26](https://github.com/fyy26)
+* [@vcai122](https://github.com/vcai122)
 * [@geant04](https://github.com/geant04)
+* [@gumillie222](https://github.com/gumillie222)
 * [@Cath3333](https://github.com/Cath3333)
 * [@sidhants25](https://github.com/sidhants25)
-* [@vcai122](https://github.com/vcai122)
-* [@fyy26](https://github.com/fyy26)
