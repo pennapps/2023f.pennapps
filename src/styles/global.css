@@ -644,26 +644,6 @@
     background-color: #FFFFFF;
   }
 
-  .Title {
-    width: 50%;
-  }
-
-  .Giga {
-    width: 30%;
-  }
-
-  .Mega {
-    width: 25%;
-  }
-
-  .Other {
-    width: 15%;
-  }
-
-  .Prize {
-    width: 10%;
-  }
-
   .footer {
     position: relative;
     margin-top: 5%;
