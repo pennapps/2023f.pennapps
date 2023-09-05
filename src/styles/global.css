@@ -622,35 +622,46 @@
     @apply mx-5 w-[55%];
     text-align: center;
     margin: auto;
-    margin-bottom: 100px;
-
+    margin-bottom: 50px;
   }
 
   .sponsor-logo-container {
+    border-radius: 24px;
+    border: 14px dashed #BEA8FF;
+    padding: 20px;
+    box-shadow:   -15px 0 0 0 #BEA8FF,
+                 15px 0 0 0 #BEA8FF,
+                 0 -15px 0 0 #BEA8FF,
+                 0 15px 0 0 #BEA8FF;
+  }
+
+  .sponsor-logo-container-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
   }
 
-  #SIG {
+  .Title {
     width: 50%;
   }
 
-  #Bloomberg, #Five-Rings, #Viam {
+  .Giga {
     width: 30%;
   }
 
-  #Capital-One, #USB-Club, #Twilio, #Jane-Street {
+  .Mega {
     width: 25%;
   }
 
-  #SCM {
+  .Other {
     width: 15%;
   }
 
-  #Balsamiq, #Walfram, #Axure, #Verbwire {
-    width: 15%;
+  .Prize {
+    width: 10%;
   }
 
   .footer {
