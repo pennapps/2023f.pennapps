@@ -180,7 +180,7 @@
   .image-row:hover .apply-content {
     @apply top-[19%] left-[48%] absolute w-[23%];
   }
-  
+
   .image-row:hover .apply-content .animated-button {
     content: url("../images/apply_button_hovered.svg");
   }
@@ -208,7 +208,7 @@
   div.apply-content {
     pointer-events: auto;
   }
-  
+
   /*
     I stole the above code from stackoverflow and I don't know how it works, but it fixes the issue of the transition happening when
     you hover over the image-row div.
@@ -323,7 +323,7 @@
   /*
     @apply text-[2vw] text-peach mb-5;
     font-family: terminal_grotesque, sans-serif;
-    margin-top: -50%; 
+    margin-top: -50%;
   */
 
   .logistics-content {
@@ -360,17 +360,17 @@
   }
 
   .schedule {
-    @apply absolute bg-[#172554] w-full flex text-left flex-col sm:mt-16 mt-20;
-    @apply text-brightyellow;
+    @apply absolute bg-[#C1ECFF] w-full flex text-left flex-col sm:mt-16 mt-20;
+    @apply text-[#202044];
     padding: 2%;
   }
 
   .schedule h1 {
-    @apply text-4xl text-brightyellow;
+    @apply text-4xl text-[#202044];
   }
 
   .schedule h2 {
-    @apply text-brightyellow;
+    @apply text-[#202044];
   }
 
   .schedule hr {

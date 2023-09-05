@@ -10,7 +10,7 @@ function Logistics({content}) {
   return (
     <div key="logistics" className="logistics-content">
       <div className="about-paragraph bg-[#C1ECFF]">
-        <a className="logistics-anchor" id="logistics"/>
+        <a className="anchor" id="Logistics"/>
         <div className="about-header bg-[#4bc8f9]">
           <h2>Logistics</h2>
         </div>
@@ -21,7 +21,7 @@ function Logistics({content}) {
           <p className="mx-5 underline">
             Prizes (Not up yet!)</p>
         </div>
-        
+
       </div>
     </div>
   )
