@@ -7,7 +7,7 @@ import FAQ from '../components/FAQ'
 import Heading from '../components/Heading'
 import Landing from '../components/Landing'
 import About from '../components/About'
-//import Sponsors from "../components/Sponsors"
+import Sponsors from "../components/Sponsors"
 import Logistics from '../components/Logistics'
 
 // markup
