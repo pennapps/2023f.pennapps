@@ -9,24 +9,35 @@ import {Link} from "gatsby";
 function Logistics({content}) {
   return (
     <div key="logistics" className="logistics-content">
-      
-      <div className="logistics-body">
+      <div className="about-paragraph bg-[#C1ECFF]">
         <a className="logistics-anchor" id="logistics"/>
-        <MDXRenderer>
-          {content}
-        </MDXRenderer>
-        <div className="logistics-icons">
-        <Link to="">
-          <IconSquare name={"SCHEDULE"} src={ScheduleIcon} />
-        </Link>
-        <a>
-          <IconSquare name={"PRIZES"} src={PrizesIcon}/>
-        </a>
+        <div className="about-header bg-[#4bc8f9]">
+          <h2>Logistics</h2>
         </div>
+        <p> Interested in more details about the hackathon? Click the buttons below to learn more!</p>
+        <div className="flex justify-center mx-auto">
+          <a href="/schedule/" className="mx-5">
+            Schedule</a>
+          <p className="mx-5 underline">
+            Prizes (Not up yet!)</p>
+        </div>
+        
       </div>
     </div>
   )
 }
+
+{/*<div className="">
+    <a className="logistics-anchor" id="logistics"/>
+    <MDXRenderer>
+      {content}
+    </MDXRenderer>
+    <div className="logistics-icons">
+    <Link to="/schedule/">
+      SCHEDULE
+    </Link>
+    </div>
+  </div>*/}
 
 function IconSquare({name, src, onClick}) {
   return (
