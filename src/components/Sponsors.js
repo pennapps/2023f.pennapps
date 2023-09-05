@@ -13,7 +13,7 @@ import scm from '../images/sponsors_logo/SCM.png';
 import balsamiq from '../images/sponsors_logo/Balsamiq.png';
 import axure from '../images/sponsors_logo/Axure.png';
 import wolfram from '../images/sponsors_logo/Wolfram-Language.png';
-import verbwire from '../images/sponsors_logo/Verbwire.svg';
+import verbwire from '../images/sponsors_logo/Verbwire.png';
 import metaphor from '../images/sponsors_logo/Metaphor.png';
 import mack from '../images/sponsors_logo/Mack-Institute.png';
 import nordvpn from '../images/sponsors_logo/NordVPN.png';
