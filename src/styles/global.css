@@ -360,8 +360,21 @@
   }
 
   .schedule {
-    @apply absolute bg-linen w-full flex flex-col justify-center sm:mt-16 mt-20;
+    @apply absolute bg-[#172554] w-full flex text-left flex-col sm:mt-16 mt-20;
+    @apply text-brightyellow;
     padding: 2%;
+  }
+
+  .schedule h1 {
+    @apply text-4xl text-brightyellow;
+  }
+
+  .schedule h2 {
+    @apply text-brightyellow;
+  }
+
+  .schedule hr {
+    @apply bg-yellow;
   }
 
   .about-section {
