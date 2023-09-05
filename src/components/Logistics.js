@@ -16,7 +16,7 @@ function Logistics({content}) {
           {content}
         </MDXRenderer>
         <div className="logistics-icons">
-        <Link to="">
+        <Link to="/schedule/">
           <IconSquare name={"SCHEDULE"} src={ScheduleIcon} />
         </Link>
         <a>
