@@ -125,7 +125,7 @@ const SPONSORS = {
 function Sponsors() {
   return (
     <div className="section">
-      <a className="anchor" id="sponsors" />
+      <a className="anchor" id="Sponsors" />
       <img id="sponsor-title" src={sponsorTitle} alt="sponsor-title"></img>
       <div className="sponsor-logo-container">
         <div className="sponsor-logo-container-inner grid grid-cols-12 gap-4">
