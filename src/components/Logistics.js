@@ -14,14 +14,14 @@ function Logistics({content}) {
         <div className="about-header bg-[#4bc8f9]">
           <h2>Logistics</h2>
         </div>
-        <p> Interested in more details about the hackathon? Click the buttons below to learn more!</p>
+        <p> Interested in more details about the hackathon? Click the buttons below to learn
+          more!</p>
         <div className="flex justify-center mx-auto">
           <a href="/schedule/" className="mx-5">
             Schedule</a>
-          <p className="mx-5 underline">
-            Prizes (Not up yet!)</p>
+          <a href="/tracks-and-prizes/" className="mx-5">
+            Tracks and Prizes</a>
         </div>
-
       </div>
     </div>
   )
@@ -37,12 +37,14 @@ function Logistics({content}) {
       SCHEDULE
     </Link>
     </div>
-  </div>*/}
+  </div>*/
+}
 
 function IconSquare({name, src, onClick}) {
   return (
     <div className="logistics-icon-square" onClick={onClick}>
-      <div className="logistics-icon-square-container"><img src={src} className="max-h-[80%]"/></div>
+      <div className="logistics-icon-square-container"><img src={src} className="max-h-[80%]"/>
+      </div>
       <div>{name}</div>
     </div>
   )

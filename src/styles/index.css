@@ -110,8 +110,8 @@ textarea {
 
 ul {
     font-family: proxima-nova, sans-serif;
-    font-size: 1.3em;
-    list-style-type: circle; 
+    font-size: 1.2em;
+    list-style-type: disc;
     padding: 10px
 }
 
@@ -125,14 +125,14 @@ ol {
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
-    text-align: center;    
+    text-align: center;
 }
 
 .btn-group, .extend {
     background-color: #6EC7B3;
     width: 100%;
     padding: 10px;
-    
+
 }
 
 #top-menu-dropdown {
@@ -169,7 +169,7 @@ ol {
 }
 
 .btn-group.extend{
-    
+
     background-color: none;
     color: #051221;
     text-transform: uppercase;
@@ -270,7 +270,7 @@ h1 span {
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
 }
-  
+
 .sponsorDiv img:hover {
     opacity:0.6;
     max-width:102%;
@@ -286,30 +286,30 @@ h1 span {
 }
 
 .topSec {
-    position: relative; 
-    padding-left: 15%; 
-    padding-right: 15%; 
-    padding-top: 10px; 
-    padding-bottom: 20px; 
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .middleSec {
-    position: absolute; 
-    top: 30%; 
-    right: 32%; 
-    height: 80%; 
-    width: 31%; 
-    background-color: #eecbac; 
-    z-index: 0; 
-    float: none; 
+    position: absolute;
+    top: 30%;
+    right: 32%;
+    height: 80%;
+    width: 31%;
+    background-color: #eecbac;
+    z-index: 0;
+    float: none;
     margin: 0 auto;
 }
 
 .bottomSec {
     background-color: #f07b7c;
-     z-index: 1; 
-     float: none; 
-     margin: 0 auto; 
+     z-index: 1;
+     float: none;
+     margin: 0 auto;
      border: 5px solid #f07b7c;
 }
 
@@ -325,7 +325,7 @@ h1 span {
 
 .clouds {
     position: relative;
-    height: auto; 
+    height: auto;
     z-index: 1;
     animation: cloudMovement 2s ease-in-out infinite alternate;
 }
@@ -342,7 +342,7 @@ h1 span {
     width: 100%;
     overflow: hidden;
   }
-  
+
   .banner-img {
     display: inline-block;
     animation: scrollBanner 20s linear infinite;
@@ -351,7 +351,7 @@ h1 span {
     height: 100px;
     scale: 1.2;
   }
-  
+
   @keyframes scrollBanner {
     0% {
       transform: translateX(0);
@@ -360,7 +360,7 @@ h1 span {
       transform: translateX(-100%);
     }
   }
-  
+
 
 
 
