@@ -7,6 +7,7 @@ import fiveRings from '../images/sponsors_logo/Five-Rings.png';
 import viam from '../images/sponsors_logo/Viam.png';
 import capitalOne from '../images/sponsors_logo/Capital-One.png';
 import usbClubs from '../images/sponsors_logo/USB-Club.png';
+import aleo from '../images/sponsors_logo/Aleo.svg';
 import twilio from '../images/sponsors_logo/Twilio.png';
 import janeStreet from '../images/sponsors_logo/Jane-Street.png';
 import scm from '../images/sponsors_logo/SCM.png';
@@ -17,7 +18,10 @@ import verbwire from '../images/sponsors_logo/Verbwire.png';
 import metaphor from '../images/sponsors_logo/Metaphor.png';
 import mack from '../images/sponsors_logo/Mack-Institute.png';
 import nordvpn from '../images/sponsors_logo/NordVPN.png';
+import nordpass from '../images/sponsors_logo/NordPass.png';
+import incogni from '../images/sponsors_logo/incogni-black.png';
 import directai from '../images/sponsors_logo/DirectAI.png';
+import edudao from '../images/sponsors_logo/EduDAO.png';
 
 const SPONSORS = {
   "Title": [
@@ -30,7 +34,7 @@ const SPONSORS = {
   "Giga": [
     {
       name: 'Bloomberg',
-      link: '',
+      link: 'https://www.bloomberg.com/company/careers/early-career/',
       logo: bloomberg,
     },
     {
@@ -46,14 +50,19 @@ const SPONSORS = {
   ],
   "Mega": [
     {
-      name: 'Capital One',
-      link: '',
-      logo: capitalOne,
+      name: 'USB Club',
+      link: 'https://usb.club/careering',
+      logo: usbClubs,
     },
     {
-      name: 'USB Club',
-      link: 'https://usb.club/about',
-      logo: usbClubs,
+      name: 'Aleo',
+      link: 'https://aleo.org/',
+      logo: aleo,
+    },
+    {
+      name: 'Stevens Capital Management',
+      link: 'https://www.scm-lp.com/',
+      logo: scm,
     },
     {
       name: 'Twilio',
@@ -66,9 +75,9 @@ const SPONSORS = {
       logo: janeStreet,
     },
     {
-      name: 'Stevens Capital Management',
-      link: 'https://www.scm-lp.com/',
-      logo: scm,
+      name: 'Capital One',
+      link: 'https://www.capitalonecareers.com/',
+      logo: capitalOne,
     },
   ],
   "Other": [
@@ -81,6 +90,11 @@ const SPONSORS = {
       name: "Metaphor",
       link: 'https://metaphor.systems/',
       logo: metaphor,
+    },
+    {
+      name: "EduDAO",
+      link: 'https://www.edudao.io/',
+      logo: edudao,
     },
   ],
   "Prize": [
@@ -96,7 +110,7 @@ const SPONSORS = {
     },
     {
       name: 'Wolfram Language',
-      link: '',
+      link: 'https://www.wolfram.com/language/',
       logo: wolfram,
     },
     {
@@ -106,17 +120,28 @@ const SPONSORS = {
     },
     {
       name: 'Meta',
-      link: 'https://www.metastudio.org/',
+      link: 'https://about.meta.com/',
       logo: meta,
     },
     {
-      name: "Nord Security",
-      link: '',
+      name: "Nord VPN",
+      link: 'https://nordsecurity.com/',
       logo: nordvpn,
     },
     {
+      name: "Nord Security",
+      link: 'https://nordsecurity.com/',
+
+      logo: nordpass,
+    },
+    {
+      name: "Incogni",
+      link: 'https://incogni.com/',
+      logo: incogni,
+    },
+    {
       name: "Direct AI",
-      link: 'https://www.directai.com/',
+      link: 'https://directai.io/',
       logo: directai,
     },
   ]
@@ -125,14 +150,14 @@ const SPONSORS = {
 function Sponsors() {
   return (
     <div className="section">
-      <a className="anchor" id="Sponsors" />
+      <a className="anchor" id="Sponsors"/>
       <img id="sponsor-title" src={sponsorTitle} alt="sponsor-title"></img>
       <div className="sponsor-logo-container">
         <div className="sponsor-logo-container-inner grid grid-cols-12 gap-4">
           {SPONSORS["Title"].map((n) => (
             <div class="col-span-12">
               <a href={n.link}>
-                <img src={n.logo} alt={n.name} />
+                <img src={n.logo} alt={n.name}/>
               </a>
             </div>
           ))}
@@ -140,34 +165,34 @@ function Sponsors() {
             SPONSORS["Giga"].map((n) => (
               <div className="col-span-6 row-auto">
                 <a href={n.link}>
-                  <img src={n.logo} alt={n.name} />
+                  <img src={n.logo} alt={n.name}/>
                 </a>
               </div>
             ))
           }
           {
             SPONSORS["Mega"].map((n) => (
-              <div className="col-span-4 row-auto" >
+              <div className="col-span-4 row-auto">
                 <a href={n.link}>
-                  <img src={n.logo} alt={n.name} />
+                  <img src={n.logo} alt={n.name}/>
                 </a>
               </div>
             ))
           }
           {
             SPONSORS["Other"].map((n) => (
-              <div className="col-span-3 row-auto" >
+              <div className="col-span-3 row-auto">
                 <a href={n.link}>
-                  <img src={n.logo} alt={n.name} />
+                  <img src={n.logo} alt={n.name}/>
                 </a>
               </div>
             ))
           }
           {
             SPONSORS["Prize"].map((n) => (
-              <div className="col-span-2 row-auto" >
+              <div className="col-span-2 row-auto">
                 <a href={n.link}>
-                  <img src={n.logo} alt={n.name} />
+                  <img src={n.logo} alt={n.name}/>
                 </a>
               </div>
             ))
