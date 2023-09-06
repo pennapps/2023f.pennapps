@@ -90,28 +90,28 @@
   .tk-karmatic-arcade { font-family: "Karmatic Arcade", sans-serif; }
 
   h1 {
-    @apply font-bold text-3xl text-green mb-5;
+    @apply font-bold text-3xl text-periwinkle mb-5;
     font-family: terminal_grotesque, sans-serif;
   }
 
 
   h2 {
-    @apply font-bold text-2xl text-green mb-1.5;
+    @apply font-bold text-2xl text-periwinkle mb-1.5;
     font-family: terminal_grotesque, sans-serif;
   }
 
   h3 {
-    @apply font-normal text-xl text-green mb-1.5;
+    @apply font-normal text-xl text-periwinkle mb-1.5;
     font-family: terminal_grotesque, sans-serif;
   }
 
   h4 {
-    @apply font-normal text-green;
+    @apply font-normal text-periwinkle;
     font-family: terminal_grotesque, sans-serif;
   }
 
   p {
-    @apply font-normal text-green mb-2;
+    @apply font-normal mb-2;
     font-family: terminal_grotesque, sans-serif;
     font-size: 1.0em;
   }
@@ -122,7 +122,7 @@
   }
 
   ul {
-    @apply font-normal text-green;
+    @apply font-normal text-periwinkle;
     font-family: terminal_grotesque, sans-serif;
     font-size: 1.3em;
     list-style-type: circle;
@@ -130,7 +130,7 @@
   }
 
   ol {
-    @apply font-normal text-green;
+    @apply font-normal text-periwinkle;
     font-family: terminal_grotesque, sans-serif;
     font-size: 1.3em;
     padding: 10px
@@ -259,7 +259,7 @@
   }
 
   .heading button {
-    @apply mt-4 bg-green text-sand px-6 py-2 rounded-full hover:bg-emerald;
+    @apply mt-4 bg-periwinkle text-sand px-6 py-2 rounded-full hover:bg-emerald;
   }
 
   .landing {
@@ -359,18 +359,28 @@
     @apply h-[45%] flex items-center justify-center;
   }
 
-  .schedule {
+  .info-page {
     @apply absolute bg-[#EAECFF] w-full flex text-left flex-col sm:mt-16 mt-20;
     @apply text-[#31398C];
     padding: 3%;
   }
 
-  .schedule h1 {
+  .info-page h1 {
     @apply text-4xl text-[#31398C];
   }
 
-  .schedule h2 {
+  .info-page h2 {
     @apply text-[#31398C];
+  }
+
+  #tracks-and-prizes h3 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  #tracks-and-prizes p {
+    font-family: proxima-nova, sans-serif;
   }
 
   .about-section {
@@ -448,7 +458,7 @@
   }
 
   nav {
-    @apply text-green bg-periwinkle px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
+    @apply text-sand bg-periwinkle px-9 w-full h-20 flex flex-row justify-between items-center top-0 sticky z-10;
     font-family: terminal_grotesque, sans-serif;
   }
 

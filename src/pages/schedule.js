@@ -14,7 +14,7 @@ const SchedulePage = () => {
       </a>
       <Link href="/"><img src={logo} className="navlinks-logo"/></Link>
     </nav>
-    <div className="schedule">
+    <div className="info-page">
       <h1>PennApps XXIV Schedule</h1>
       <Friday/>
       <hr/>
