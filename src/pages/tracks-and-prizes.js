@@ -9,7 +9,7 @@ import SponsoredPrizes from '../../content/tracks_and_prizes/sponsored_prizes.md
 const TracksAndPrizesPage = () => {
   return <main>
     <nav style={{position: "fixed"}}>
-      <a href="/#logistics" className="links">
+      <a href="/#Logistics" className="links">
         <button>Back</button>
       </a>
       <Link href="/"><img src={logo} className="navlinks-logo"/></Link>

@@ -9,7 +9,7 @@ import Sunday from '../../content/schedule/sunday.mdx'
 const SchedulePage = () => {
   return <main>
     <nav style={{position: "fixed"}}>
-      <a href="/#logistics" className="links">
+      <a href="/#Logistics" className="links">
         <button>Back</button>
       </a>
       <Link href="/"><img src={logo} className="navlinks-logo"/></Link>

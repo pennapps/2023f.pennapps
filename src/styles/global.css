@@ -346,17 +346,18 @@
 
   .logistics-icon-square {
     @apply flex flex-col items-center justify-center;
-    @apply bg-brightblue bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-lg;
+    @apply bg-brightblue bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-xl;
     @apply font-semibold text-navy tracking-wide;
     font-family: proxima-nova, sans-serif;
-  }
-
-  .clouds-container{
-    @apply w-[0] md:w-[100vw] overflow-hidden absolute top-0 h-[70vw];
+    background-color: #4CC7F9;
   }
 
   .logistics-icon-square-container {
     @apply h-[45%] flex items-center justify-center;
+  }
+
+  .clouds-container{
+    @apply w-[0] md:w-[100vw] overflow-hidden absolute top-0 h-[70vw];
   }
 
   .info-page {
