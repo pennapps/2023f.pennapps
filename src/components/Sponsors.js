@@ -21,7 +21,6 @@ import nordvpn from '../images/sponsors_logo/NordVPN.png';
 import nordpass from '../images/sponsors_logo/NordPass.png';
 import incogni from '../images/sponsors_logo/incogni-black.png';
 import directai from '../images/sponsors_logo/DirectAI.png';
-import edudao from '../images/sponsors_logo/EduDAO.png';
 
 const SPONSORS = {
   "Title": [
@@ -90,11 +89,6 @@ const SPONSORS = {
       name: "Metaphor",
       link: 'https://metaphor.systems/',
       logo: metaphor,
-    },
-    {
-      name: "EduDAO",
-      link: 'https://www.edudao.io/',
-      logo: edudao,
     },
   ],
   "Prize": [
