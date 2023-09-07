@@ -5,7 +5,7 @@ import { VscFoldDown } from "react-icons/vsc"
 import clouds from '../images/cloud.svg'
 import banner from '../images/banner.svg'
 
-const target = new Date("September 8 2023 18:00:00 EST")
+const target = new Date("September 8 2023 19:00:00 EST")
 
 function Landing() {
   const [mSecUntil, setMSecUntil] = useState(target - Date.now())
