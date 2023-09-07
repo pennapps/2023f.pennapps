@@ -195,7 +195,7 @@
   }
 
   .apply-content:hover .animated-button {
-    content: url("../images//apply_button_hovered.svg");
+    content: url("../images/apply_button_hovered.svg");
   }
 
   .image-row:hover .animated-coin{
@@ -652,7 +652,8 @@
   .sponsor-logo-container-inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
     gap: 20px;
     padding: 20px;
     background-color: #FFFFFF;
