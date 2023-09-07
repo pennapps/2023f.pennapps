@@ -5,6 +5,7 @@ import bloomberg from '../images/sponsors_logo/Bloomberg.jpeg';
 import fiveRings from '../images/sponsors_logo/Five-Rings.png';
 import viam from '../images/sponsors_logo/Viam.png';
 import capitalOne from '../images/sponsors_logo/Capital-One.png';
+import mt from '../images/sponsors_logo/MT.jpg';
 import usbClubs from '../images/sponsors_logo/USB-Club.png';
 import aleo from '../images/sponsors_logo/Aleo.svg';
 import twilio from '../images/sponsors_logo/Twilio.png';
@@ -15,6 +16,7 @@ import axure from '../images/sponsors_logo/Axure.png';
 import wolfram from '../images/sponsors_logo/Wolfram-Language.png';
 import verbwire from '../images/sponsors_logo/Verbwire.png';
 import metaphor from '../images/sponsors_logo/Metaphor.png';
+import detkinLab from '../images/sponsors_logo/detkin-lab.jpg';
 import mack from '../images/sponsors_logo/Mack-Institute.png';
 import nordvpn from '../images/sponsors_logo/NordVPN.png';
 import nordpass from '../images/sponsors_logo/NordPass.png';
@@ -80,6 +82,11 @@ const SPONSORS = {
   ],
   "Other": [
     {
+      name: 'The Jerome Fisher M&T Program',
+      link: 'https://fisher.wharton.upenn.edu/',
+      logo: mt,
+    },
+    {
       name: 'Mack Institute',
       link: 'https://mackinstitute.wharton.upenn.edu/',
       logo: mack,
@@ -88,6 +95,11 @@ const SPONSORS = {
       name: "Metaphor",
       link: 'https://metaphor.systems/',
       logo: metaphor,
+    },
+    {
+      name: "Peter Detkin Lab",
+      link: 'https://detkin.ese.upenn.edu/',
+      logo: detkinLab,
     },
   ],
   "Prize": [
@@ -142,7 +154,7 @@ function Sponsors() {
       <div className="sponsor-logo-container">
         <div className="sponsor-logo-container-inner grid grid-cols-12 gap-4">
           {SPONSORS["Title"].map((n) => (
-            <div class="col-span-12">
+            <div className="col-span-12">
               <a href={n.link}>
                 <img src={n.logo} alt={n.name}/>
               </a>
