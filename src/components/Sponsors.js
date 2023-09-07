@@ -112,14 +112,13 @@ const SPONSORS = {
       logo: verbwire,
     },
     {
-      name: "Nord VPN",
-      link: 'https://nordsecurity.com/',
+      name: "NordVPN",
+      link: 'https://nordvpn.com/',
       logo: nordvpn,
     },
     {
-      name: "Nord Security",
-      link: 'https://nordsecurity.com/',
-
+      name: "NordPass",
+      link: 'https://nordpass.com/',
       logo: nordpass,
     },
     {
