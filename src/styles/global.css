@@ -327,17 +327,29 @@
   */
 
   .logistics-content {
-    @apply relative text-navy px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    @apply relative px-[10%] md:px-[15%] lg:px-[25%] pt-12;
+    @apply text-xl;
     margin-bottom: -0.5rem;
+    color: #EAECFF;
   }
 
   .logistics-anchor {
     @apply relative top-[-200px] invisible;
   }
 
+  .logistics-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 50%;
+  }
+
   .logistics-body {
     @apply relative;
-    @apply bg-brightblue rounded-lg w-[80%] md:w-[40rem] px-14 py-10;
+    @apply rounded-lg w-[80%] md:w-[40rem] px-14 py-10;
+    background-color: #31398C;
+    border: 20px solid #5761CC;
   }
 
   .logistics-icons {
@@ -347,9 +359,10 @@
   .logistics-icon-square {
     @apply flex flex-col items-center justify-center;
     @apply bg-brightblue bg-opacity-10 w-[11.5vw] h-[11vw] min-w-[7rem] min-h-[7rem] rounded-xl;
-    @apply font-semibold text-navy tracking-wide;
+    @apply font-semibold tracking-wide;
     font-family: proxima-nova, sans-serif;
-    background-color: #4CC7F9;
+    background-color: #5761CC;
+    color: #EAECFF;
   }
 
   .logistics-icon-square-container {
@@ -374,14 +387,8 @@
     @apply text-[#31398C];
   }
 
-  #tracks-and-prizes h3 {
-    font-family: proxima-nova, sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
-  }
-
-  #tracks-and-prizes p {
-    font-family: proxima-nova, sans-serif;
+  .info-page th, td {
+    max-width: 136px;
   }
 
   .about-section {

@@ -1,5 +1,4 @@
 import React from 'react'
-import meta from '../../static/sponsors/2022-meta.png'
 import sponsorTitle from '../images/sponsor.png';
 import sig from '../images/sponsors_logo/SIG.png';
 import bloomberg from '../images/sponsors_logo/Bloomberg.jpeg';
@@ -111,11 +110,6 @@ const SPONSORS = {
       name: 'Verbwire',
       link: 'https://www.verbwire.com/',
       logo: verbwire,
-    },
-    {
-      name: 'Meta',
-      link: 'https://about.meta.com/',
-      logo: meta,
     },
     {
       name: "Nord VPN",

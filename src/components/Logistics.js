@@ -1,4 +1,6 @@
 import React from 'react'
+import logisticsTitle from '../images/logistics-title.svg'
+import ddrKnockoff from '../images/DDR_knockoff.svg'
 import calendarIcon from '../images/calendar-icon.svg'
 import trophyIcon from '../images/trophy-icon.svg'
 import background from '../images/LogisticsBackground.png' //change this file
@@ -9,20 +11,20 @@ import {Link} from "gatsby";
 function Logistics({content}) {
   return (
     <div key="logistics" className="logistics-content">
-      <div className="about-paragraph bg-[#C1ECFF]">
-        <a className="anchor" id="Logistics"/>
-        <div className="about-header bg-[#4bc8f9]">
-          <h2>Logistics</h2>
-        </div>
+      <a className="anchor" id="Logistics"/>
+      <img src={logisticsTitle} className="logistics-title"/>
+      <img src={ddrKnockoff}/>
+      <div className="logistics-body">
         <p> Interested in more details about the hackathon? Click the buttons below to learn
           more!</p>
+        <div className="h-6"></div>
         <div className="flex justify-center mx-auto">
-          <IconSquare src={calendarIcon} name="Schedule" onClick={() => {
+          <IconSquare src={calendarIcon} name="SCHEDULE" onClick={() => {
             window.location.href = "/schedule/"
           }}/>
           <div className="w-16"></div>
-          <IconSquare src={trophyIcon} name="Tracks and Prizes" onClick={() => {
-            window.location.href = "/tracks-and-prizes/"
+          <IconSquare src={trophyIcon} name="PRIZES" onClick={() => {
+            window.location.href = "https://pennapps-xxiv.devpost.com/"
           }}/>
         </div>
       </div>
