@@ -5,18 +5,19 @@ import bloomberg from '../images/sponsors_logo/Bloomberg.jpeg';
 import fiveRings from '../images/sponsors_logo/Five-Rings.png';
 import viam from '../images/sponsors_logo/Viam.png';
 import capitalOne from '../images/sponsors_logo/Capital-One.png';
-import mt from '../images/sponsors_logo/MT.jpg';
+import mt from '../images/sponsors_logo/upenn-mt.png';
 import usbClub from '../images/sponsors_logo/USB-Club.png';
 import aleo from '../images/sponsors_logo/Aleo.svg';
 import twilio from '../images/sponsors_logo/Twilio.png';
 import janeStreet from '../images/sponsors_logo/Jane-Street.png';
 import scm from '../images/sponsors_logo/SCM.png';
+import roboflow from '../images/sponsors_logo/roboflow.png';
 import balsamiq from '../images/sponsors_logo/Balsamiq.png';
 import axure from '../images/sponsors_logo/Axure.png';
 import wolfram from '../images/sponsors_logo/Wolfram-Language.png';
 import verbwire from '../images/sponsors_logo/Verbwire.png';
 import metaphor from '../images/sponsors_logo/Metaphor.png';
-import detkinLab from '../images/sponsors_logo/detkin-lab.jpg';
+import detkinLab from '../images/sponsors_logo/detkin-lab.png';
 import mack from '../images/sponsors_logo/Mack-Institute.png';
 import nordvpn from '../images/sponsors_logo/NordVPN.png';
 import nordpass from '../images/sponsors_logo/NordPass.png';
@@ -79,13 +80,15 @@ const SPONSORS = {
       link: 'https://www.capitalonecareers.com/',
       logo: capitalOne,
     },
-  ],
-  "Other": [
+    // Note: M&T should go into "other" but for prettier layout, it's here
+    // If we add more sponsors we should move it back
     {
       name: 'The Jerome Fisher M&T Program',
       link: 'https://fisher.wharton.upenn.edu/',
       logo: mt,
     },
+  ],
+  "Other": [
     {
       name: 'Mack Institute',
       link: 'https://mackinstitute.wharton.upenn.edu/',
@@ -100,6 +103,11 @@ const SPONSORS = {
       name: "Peter Detkin Lab",
       link: 'https://detkin.ese.upenn.edu/',
       logo: detkinLab,
+    },
+    {
+      name: 'Roboflow',
+      link: 'https://roboflow.com/',
+      logo: roboflow,
     },
   ],
   "Prize": [
