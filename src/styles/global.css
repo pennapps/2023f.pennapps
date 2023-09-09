@@ -506,11 +506,12 @@
   .mobile-nav {
     @apply sm:hidden absolute bg-brightyellow top-20 right-0 flex flex-col;
     @apply overflow-hidden transition-all ease-in-out duration-500;
+    color: navy
   }
 
   .mobile-nav a {
     @apply py-4 px-16 border-b border-x border-gray-200 text-center;
-    @apply hover:bg-honeydew hover:no-underline;
+    @apply hover:bg-yellow hover:no-underline;
     @apply first:border-t;
   }
 

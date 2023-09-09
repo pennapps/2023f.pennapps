@@ -6,7 +6,7 @@ import fiveRings from '../images/sponsors_logo/Five-Rings.png';
 import viam from '../images/sponsors_logo/Viam.png';
 import capitalOne from '../images/sponsors_logo/Capital-One.png';
 import mt from '../images/sponsors_logo/MT.jpg';
-import usbClubs from '../images/sponsors_logo/USB-Club.png';
+import usbClub from '../images/sponsors_logo/USB-Club.png';
 import aleo from '../images/sponsors_logo/Aleo.svg';
 import twilio from '../images/sponsors_logo/Twilio.png';
 import janeStreet from '../images/sponsors_logo/Jane-Street.png';
@@ -51,8 +51,8 @@ const SPONSORS = {
   "Mega": [
     {
       name: 'USB Club',
-      link: 'https://usb.club/careering',
-      logo: usbClubs,
+      link: 'https://usb.club/',
+      logo: usbClub,
     },
     {
       name: 'Aleo',
